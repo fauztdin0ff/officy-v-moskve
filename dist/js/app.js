@@ -811,6 +811,41 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+/*==========================================================================
+Office tabs
+============================================================================*/
+document.addEventListener('DOMContentLoaded', () => {
+   const tabs = document.querySelectorAll('.offices__tab');
+   const items = document.querySelectorAll('.offices__items');
+   const loader = document.querySelector('.loading-icon');
+
+   if (!tabs.length || !items.length || !loader) return;
+
+   tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+         const target = tab.dataset.tab;
+
+         if (tab.classList.contains('active')) return;
+
+         tabs.forEach(t => t.classList.remove('active'));
+         tab.classList.add('active');
+
+         loader.classList.add('active');
+
+         items.forEach(item => item.classList.remove('active'));
+
+         setTimeout(() => {
+            loader.classList.remove('active');
+
+            const targetItem = document.querySelector(`.offices__items[data-tab="${target}"]`);
+            if (targetItem) {
+               targetItem.classList.add('active');
+            }
+         }, 600);
+      });
+   });
+});
+
 })();
 
 /******/ })()

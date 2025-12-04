@@ -191,8 +191,10 @@
                      <h2 class="description__title">
                         <span>Бизнес-центр</span>
                         Фьюжн Парк
+                        <span class="description__title-class">класс "A+"</span>
                      </h2>
-                     <div class="description__address">Москва, Пресненская набережная, 12</div>
+                     <div class="description__address"><img src="img/icons/location-bk.png" alt=""> Москва, Пресненская
+                        набережная, 12</div>
                   </div>
                   <div class="description__rating">
                      <div class="description__rating">
@@ -210,26 +212,42 @@
                </div>
                <div class="description__orients">
                   <div class="description__orient">
-                     <div class="description__orient-label">Где находится</div>
+                     <div class="description__orient-label">Офисы</div>
                      <div class="description__orient-rows">
-                        <p><span>Округ</span> <i></i> Центральный (ЦАО)</p>
-                        <p><span>Район</span> <i></i> Пресненский</p>
-                        <p><span>Номер налоговой</span> <i></i> 32</p>
+                        <p><span>Аренда 12 офисов</span> <i></i> 120-4500 м²</p>
+                        <p><span>Продажа 5 офисов</span> <i></i> 85-620 м²</p>
+                        <p><span>Обновлено</span> <i></i> 4 декабря 2025</p>
                      </div>
                   </div>
                   <div class="description__orient">
                      <div class="description__orient-label">Как добраться</div>
                      <div class="description__orient-rows">
-                        <p>Международная <i></i><span><img src="img/icons/person-walking.svg" width="16" height="16"
-                                 alt="icon">372
-                              м</span></p>
-                        <p>Выставочная <i></i>
-                           <span><img src="img/icons/person-walking.svg" width="16" height="16" alt="icon">528
-                              м</span>
+                        <p class="circle -orange">Международная <i></i>
+                           <span>
+                              <img src="img/icons/car.svg" width="26" height="26" alt="icon">372 м
+                           </span>
                         </p>
-                        <p>Деловой центр <i></i> <span><img src="img/icons/person-walking.svg" width="16" height="16"
-                                 alt="icon">441
-                              м</span></p>
+                        <p class="circle -green">Выставочная <i></i>
+                           <span>
+                              <img src="img/icons/car.svg" width="26" height="26" alt="icon">
+                              528 м
+                           </span>
+                        </p>
+                        <p class="circle -blue">
+                           <a href="">Деловой центр</a> <i></i>
+                           <span>
+                              <img src="img/icons/car.svg" width="26" height="26" alt="icon">
+                              441 м
+                           </span>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="description__orient">
+                     <div class="description__orient-label">Где находится</div>
+                     <div class="description__orient-rows">
+                        <p><span>Округ</span> <i></i> <a href="">Центральный (ЦАО)</a></p>
+                        <p><span>Район</span> <i></i> <a href="">Пресненский</a></p>
+                        <p><span>Номер налоговой</span> <i></i> 32</p>
                      </div>
                   </div>
                </div>
@@ -245,8 +263,8 @@
                      </h3>
                      <div class="offices__controls">
                         <div class="offices__tabs">
-                           <div class="offices__tab active">Аренда</div>
-                           <div class="offices__tab">Продажа</div>
+                           <div class="offices__tab active" data-tab="rent">Аренда <span>18</span></div>
+                           <div class="offices__tab" data-tab="sell">Продажа <span>10</span></div>
                         </div>
                         <div class="catalog__sort">
                            <button class="catalog__sort-btn">Популярные
@@ -266,236 +284,474 @@
                            </div>
                         </div>
                      </div>
-                     <div class="offices__items">
-                        <div class="offices__item">
-                           <div class="offices__item-preview">
-                              <div class="offices__item-slider swiper">
-                                 <div class="swiper-wrapper">
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/1.jpeg" alt="">
+                     <div class="offices__wrapper">
+                        <div class="offices__items active" data-tab="rent">
+                           <div class="offices__item">
+                              <div class="offices__item-preview">
+                                 <div class="offices__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/1.jpeg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/2.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/3.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/4.jpg" alt="">
+                                       </div>
                                     </div>
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/2.jpg" alt="">
-                                    </div>
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/3.jpg" alt="">
-                                    </div>
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/4.jpg" alt="">
+                                    <div class="offices__item-pagination"></div>
+                                 </div>
+                              </div>
+                              <div class="offices__item-info">
+                                 <div class="offices__item-panel">
+                                    <div class="offices__item-area">208 м²</div>
+
+                                    <div class="offices__item-update">
+                                       <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
+                                       обновлено 02.12.2025
                                     </div>
                                  </div>
-                                 <div class="offices__item-pagination"></div>
+                                 <div class="offices__item-prices">
+                                    <div class="offices__item-price">
+                                       <span>м² в год</span>
+                                       346 600 ₽
+                                    </div>
+                                    <div class="offices__item-price">
+                                       <span>в месяц</span>
+                                       552 600 ₽
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-details">
+                                    <div class="offices__item-detail">
+                                       <span>Этаж</span> <i></i> 6
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Планировка</span> <i></i> Смешанная
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Мебель</span> <i></i> Частично мебелирована
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Готовность</span> <i></i> Готова к въезду
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-btn">
+                                    <a href="office.html" class="btn">Смотреть</a>
+                                 </div>
                               </div>
                            </div>
-                           <div class="offices__item-info">
-                              <div class="offices__item-panel">
-                                 <div class="offices__item-area">208 м²</div>
 
-                                 <div class="offices__item-update">
-                                    <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
-                                    обновлено 02.12.2025
+                           <div class="offices__item">
+                              <div class="offices__item-preview">
+                                 <div class="offices__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/2.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/1.jpeg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/3.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/4.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="offices__item-pagination"></div>
                                  </div>
                               </div>
-                              <div class="offices__item-prices">
-                                 <div class="offices__item-price">
-                                    <span>м² в год</span>
-                                    346 600 ₽
+                              <div class="offices__item-info">
+                                 <div class="offices__item-panel">
+                                    <div class="offices__item-area">208 м²</div>
+
+                                    <div class="offices__item-update">
+                                       <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
+                                       обновлено 02.12.2025
+                                    </div>
                                  </div>
-                                 <div class="offices__item-price">
-                                    <span>в месяц</span>
-                                    552 600 ₽
+                                 <div class="offices__item-prices">
+                                    <div class="offices__item-price">
+                                       <span>м² в год</span>
+                                       346 600 ₽
+                                    </div>
+                                    <div class="offices__item-price">
+                                       <span>в месяц</span>
+                                       552 600 ₽
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-details">
+                                    <div class="offices__item-detail">
+                                       <span>Этаж</span> <i></i> 6
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Планировка</span> <i></i> Смешанная
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Мебель</span> <i></i> Частично мебелирована
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Готовность</span> <i></i> Готова к въезду
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-btn">
+                                    <a href="office.html" class="btn">Смотреть</a>
                                  </div>
                               </div>
-                              <div class="offices__item-details">
-                                 <div class="offices__item-detail">
-                                    <span>Этаж</span> <i></i> 6
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Планировка</span> <i></i> Смешанная
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Мебель</span> <i></i> Частично мебелирована
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Готовность</span> <i></i> Готова к въезду
+                           </div>
+
+                           <div class="offices__item">
+                              <div class="offices__item-preview">
+                                 <div class="offices__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/3.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/1.jpeg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/2.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="offices__item-pagination"></div>
                                  </div>
                               </div>
-                              <div class="offices__item-btn">
-                                 <a href="office.html" class="btn">Смотреть</a>
+                              <div class="offices__item-info">
+                                 <div class="offices__item-panel">
+                                    <div class="offices__item-area">208 м²</div>
+
+                                    <div class="offices__item-update">
+                                       <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
+                                       обновлено 02.12.2025
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-prices">
+                                    <div class="offices__item-price">
+                                       <span>м² в год</span>
+                                       346 600 ₽
+                                    </div>
+                                    <div class="offices__item-price">
+                                       <span>в месяц</span>
+                                       552 600 ₽
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-details">
+                                    <div class="offices__item-detail">
+                                       <span>Этаж</span> <i></i> 6
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Планировка</span> <i></i> Смешанная
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Мебель</span> <i></i> Частично мебелирована
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Готовность</span> <i></i> Готова к въезду
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-btn">
+                                    <a href="office.html" class="btn">Смотреть</a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="offices__item">
+                              <div class="offices__item-preview">
+                                 <div class="offices__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/4.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/1.jpeg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/2.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="offices__item-pagination"></div>
+                                 </div>
+                              </div>
+                              <div class="offices__item-info">
+                                 <div class="offices__item-panel">
+                                    <div class="offices__item-area">208 м²</div>
+
+                                    <div class="offices__item-update">
+                                       <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
+                                       обновлено 02.12.2025
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-prices">
+                                    <div class="offices__item-price">
+                                       <span>м² в год</span>
+                                       346 600 ₽
+                                    </div>
+                                    <div class="offices__item-price">
+                                       <span>в месяц</span>
+                                       552 600 ₽
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-details">
+                                    <div class="offices__item-detail">
+                                       <span>Этаж</span> <i></i> 6
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Планировка</span> <i></i> Смешанная
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Мебель</span> <i></i> Частично мебелирована
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Готовность</span> <i></i> Готова к въезду
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-btn">
+                                    <a href="office.html" class="btn">Смотреть</a>
+                                 </div>
                               </div>
                            </div>
                         </div>
 
-                        <div class="offices__item">
-                           <div class="offices__item-preview">
-                              <div class="offices__item-slider swiper">
-                                 <div class="swiper-wrapper">
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/2.jpg" alt="">
+                        <div class="offices__items" data-tab="sell">
+                           <div class="offices__item">
+                              <div class="offices__item-preview">
+                                 <div class="offices__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/4.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/1.jpeg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/2.jpg" alt="">
+                                       </div>
                                     </div>
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/1.jpeg" alt="">
-                                    </div>
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/3.jpg" alt="">
-                                    </div>
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/4.jpg" alt="">
-                                    </div>
+                                    <div class="offices__item-pagination"></div>
                                  </div>
-                                 <div class="offices__item-pagination"></div>
                               </div>
-                           </div>
-                           <div class="offices__item-info">
-                              <div class="offices__item-panel">
-                                 <div class="offices__item-area">208 м²</div>
+                              <div class="offices__item-info">
+                                 <div class="offices__item-panel">
+                                    <div class="offices__item-area">208 м²</div>
 
-                                 <div class="offices__item-update">
-                                    <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
-                                    обновлено 02.12.2025
+                                    <div class="offices__item-update">
+                                       <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
+                                       обновлено 02.12.2025
+                                    </div>
                                  </div>
-                              </div>
-                              <div class="offices__item-prices">
-                                 <div class="offices__item-price">
-                                    <span>м² в год</span>
-                                    346 600 ₽
+                                 <div class="offices__item-prices">
+                                    <div class="offices__item-price">
+                                       <span>м² в год</span>
+                                       346 600 ₽
+                                    </div>
+                                    <div class="offices__item-price">
+                                       <span>в месяц</span>
+                                       552 600 ₽
+                                    </div>
                                  </div>
-                                 <div class="offices__item-price">
-                                    <span>в месяц</span>
-                                    552 600 ₽
+                                 <div class="offices__item-details">
+                                    <div class="offices__item-detail">
+                                       <span>Этаж</span> <i></i> 6
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Планировка</span> <i></i> Смешанная
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Мебель</span> <i></i> Частично мебелирована
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Готовность</span> <i></i> Готова к въезду
+                                    </div>
                                  </div>
-                              </div>
-                              <div class="offices__item-details">
-                                 <div class="offices__item-detail">
-                                    <span>Этаж</span> <i></i> 6
+                                 <div class="offices__item-btn">
+                                    <a href="office.html" class="btn">Смотреть</a>
                                  </div>
-                                 <div class="offices__item-detail">
-                                    <span>Планировка</span> <i></i> Смешанная
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Мебель</span> <i></i> Частично мебелирована
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Готовность</span> <i></i> Готова к въезду
-                                 </div>
-                              </div>
-                              <div class="offices__item-btn">
-                                 <a href="office.html" class="btn">Смотреть</a>
                               </div>
                            </div>
+
+                           <div class="offices__item">
+                              <div class="offices__item-preview">
+                                 <div class="offices__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/3.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/1.jpeg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/2.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="offices__item-pagination"></div>
+                                 </div>
+                              </div>
+                              <div class="offices__item-info">
+                                 <div class="offices__item-panel">
+                                    <div class="offices__item-area">208 м²</div>
+
+                                    <div class="offices__item-update">
+                                       <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
+                                       обновлено 02.12.2025
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-prices">
+                                    <div class="offices__item-price">
+                                       <span>м² в год</span>
+                                       346 600 ₽
+                                    </div>
+                                    <div class="offices__item-price">
+                                       <span>в месяц</span>
+                                       552 600 ₽
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-details">
+                                    <div class="offices__item-detail">
+                                       <span>Этаж</span> <i></i> 6
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Планировка</span> <i></i> Смешанная
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Мебель</span> <i></i> Частично мебелирована
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Готовность</span> <i></i> Готова к въезду
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-btn">
+                                    <a href="office.html" class="btn">Смотреть</a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="offices__item">
+                              <div class="offices__item-preview">
+                                 <div class="offices__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/1.jpeg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/2.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/3.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/4.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="offices__item-pagination"></div>
+                                 </div>
+                              </div>
+                              <div class="offices__item-info">
+                                 <div class="offices__item-panel">
+                                    <div class="offices__item-area">208 м²</div>
+
+                                    <div class="offices__item-update">
+                                       <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
+                                       обновлено 02.12.2025
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-prices">
+                                    <div class="offices__item-price">
+                                       <span>м² в год</span>
+                                       346 600 ₽
+                                    </div>
+                                    <div class="offices__item-price">
+                                       <span>в месяц</span>
+                                       552 600 ₽
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-details">
+                                    <div class="offices__item-detail">
+                                       <span>Этаж</span> <i></i> 6
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Планировка</span> <i></i> Смешанная
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Мебель</span> <i></i> Частично мебелирована
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Готовность</span> <i></i> Готова к въезду
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-btn">
+                                    <a href="office.html" class="btn">Смотреть</a>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="offices__item">
+                              <div class="offices__item-preview">
+                                 <div class="offices__item-slider swiper">
+                                    <div class="swiper-wrapper">
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/2.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/1.jpeg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/3.jpg" alt="">
+                                       </div>
+                                       <div class="offices__item-slide swiper-slide">
+                                          <img src="img/offices/4.jpg" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="offices__item-pagination"></div>
+                                 </div>
+                              </div>
+                              <div class="offices__item-info">
+                                 <div class="offices__item-panel">
+                                    <div class="offices__item-area">208 м²</div>
+
+                                    <div class="offices__item-update">
+                                       <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
+                                       обновлено 02.12.2025
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-prices">
+                                    <div class="offices__item-price">
+                                       <span>м² в год</span>
+                                       346 600 ₽
+                                    </div>
+                                    <div class="offices__item-price">
+                                       <span>в месяц</span>
+                                       552 600 ₽
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-details">
+                                    <div class="offices__item-detail">
+                                       <span>Этаж</span> <i></i> 6
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Планировка</span> <i></i> Смешанная
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Мебель</span> <i></i> Частично мебелирована
+                                    </div>
+                                    <div class="offices__item-detail">
+                                       <span>Готовность</span> <i></i> Готова к въезду
+                                    </div>
+                                 </div>
+                                 <div class="offices__item-btn">
+                                    <a href="office.html" class="btn">Смотреть</a>
+                                 </div>
+                              </div>
+                           </div>
+
+
+
                         </div>
-
-                        <div class="offices__item">
-                           <div class="offices__item-preview">
-                              <div class="offices__item-slider swiper">
-                                 <div class="swiper-wrapper">
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/3.jpg" alt="">
-                                    </div>
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/1.jpeg" alt="">
-                                    </div>
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/2.jpg" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="offices__item-pagination"></div>
-                              </div>
-                           </div>
-                           <div class="offices__item-info">
-                              <div class="offices__item-panel">
-                                 <div class="offices__item-area">208 м²</div>
-
-                                 <div class="offices__item-update">
-                                    <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
-                                    обновлено 02.12.2025
-                                 </div>
-                              </div>
-                              <div class="offices__item-prices">
-                                 <div class="offices__item-price">
-                                    <span>м² в год</span>
-                                    346 600 ₽
-                                 </div>
-                                 <div class="offices__item-price">
-                                    <span>в месяц</span>
-                                    552 600 ₽
-                                 </div>
-                              </div>
-                              <div class="offices__item-details">
-                                 <div class="offices__item-detail">
-                                    <span>Этаж</span> <i></i> 6
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Планировка</span> <i></i> Смешанная
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Мебель</span> <i></i> Частично мебелирована
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Готовность</span> <i></i> Готова к въезду
-                                 </div>
-                              </div>
-                              <div class="offices__item-btn">
-                                 <a href="office.html" class="btn">Смотреть</a>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="offices__item">
-                           <div class="offices__item-preview">
-                              <div class="offices__item-slider swiper">
-                                 <div class="swiper-wrapper">
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/4.jpg" alt="">
-                                    </div>
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/1.jpeg" alt="">
-                                    </div>
-                                    <div class="offices__item-slide swiper-slide">
-                                       <img src="img/offices/2.jpg" alt="">
-                                    </div>
-                                 </div>
-                                 <div class="offices__item-pagination"></div>
-                              </div>
-                           </div>
-                           <div class="offices__item-info">
-                              <div class="offices__item-panel">
-                                 <div class="offices__item-area">208 м²</div>
-
-                                 <div class="offices__item-update">
-                                    <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
-                                    обновлено 02.12.2025
-                                 </div>
-                              </div>
-                              <div class="offices__item-prices">
-                                 <div class="offices__item-price">
-                                    <span>м² в год</span>
-                                    346 600 ₽
-                                 </div>
-                                 <div class="offices__item-price">
-                                    <span>в месяц</span>
-                                    552 600 ₽
-                                 </div>
-                              </div>
-                              <div class="offices__item-details">
-                                 <div class="offices__item-detail">
-                                    <span>Этаж</span> <i></i> 6
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Планировка</span> <i></i> Смешанная
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Мебель</span> <i></i> Частично мебелирована
-                                 </div>
-                                 <div class="offices__item-detail">
-                                    <span>Готовность</span> <i></i> Готова к въезду
-                                 </div>
-                              </div>
-                              <div class="offices__item-btn">
-                                 <a href="office.html" class="btn">Смотреть</a>
-                              </div>
-                           </div>
-                        </div>
+                        <div class="loading-icon"></div>
                      </div>
                   </div>
                   <div class="description__text">
@@ -639,7 +895,8 @@
                                  <div class="description__aside-form-area-label">Телефон</div>
                                  <div class="description__aside-form-val">
                                     <img src="img/icons/telephone-fill-blue.svg" alt="">
-                                    <input type="text" class="tel-mask" placeholder="+7 (495) 123-45-67" required>
+                                    <input type="text" class="tel-mask" inputmode="numeric" pattern="[0-9]*"
+                                       placeholder="+7 (495) 123-45-67" required>
                                  </div>
                               </div>
                               <div class="policy-agree">
