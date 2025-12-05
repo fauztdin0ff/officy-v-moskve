@@ -4002,9 +4002,13 @@ Descr
 .description__orient p span {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
 }
 .description__orient p span img {
+  width: 22px;
+  height: 18px;
+  object-fit: contain;
+  object-position: right;
   opacity: 0.8;
 }
 .description__orient a {
