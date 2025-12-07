@@ -735,25 +735,32 @@ if (bcSlider) {
 
 
 /*------------------------------Галерея---------------------------*/
-document.getElementById('openGallery').addEventListener('click', () => {
-   const slides = document.querySelectorAll('.business-center__slide');
+const openBtn = document.getElementById('openGallery');
 
-   const items = Array.from(slides)
-      .map(slide => {
-         const img = slide.querySelector('img');
-         if (!img) return null;
-         return {
-            src: img.src,
-            type: 'image',
-            caption: img.alt || ''
-         };
-      })
-      .filter(item => item !== null);
+if (openBtn) {
+   openBtn.addEventListener('click', () => {
+      const slides = document.querySelectorAll('.business-center__slide');
+      if (!slides.length) return;
 
-   if (items.length === 0) return;
+      const items = Array.from(slides)
+         .map(slide => {
+            const img = slide.querySelector('img');
+            if (!img || !img.src) return null;
 
-   Fancybox.show(items);
-});
+            return {
+               src: img.src,
+               type: 'image',
+               caption: img.alt || ''
+            };
+         })
+         .filter(Boolean);
+
+      if (!items.length) return;
+      if (typeof Fancybox === 'undefined' || !Fancybox.show) return;
+
+      Fancybox.show(items);
+   });
+}
 
 
 /*==========================================================================
@@ -863,6 +870,109 @@ document.addEventListener('DOMContentLoaded', () => {
                targetItem.classList.add('active');
             }
          }, 600);
+      });
+   });
+});
+
+
+/*==========================================================================
+Офис слайдеры   
+============================================================================*/
+
+const productGallerySlider = document.querySelector('.office__gallery-slider');
+const productGallerySlider2 = document.querySelector('.office__gallery-slider-2');
+
+if (productGallerySlider && productGallerySlider2) {
+
+   const productSwiper = new Swiper(productGallerySlider, {
+      direction: 'vertical',
+      spaceBetween: 10,
+      slidesPerView: 6,
+      freeMode: {
+         enabled: true,
+         momentum: true,
+         momentumRatio: 1,
+         momentumBounce: false,
+      },
+      watchSlidesProgress: true,
+   });
+
+   const productSwiper2 = new Swiper(productGallerySlider2, {
+      direction: 'vertical',
+      spaceBetween: 10,
+      thumbs: {
+         swiper: productSwiper,
+      },
+      mousewheel: {
+         releaseOnEdges: false,
+         sensitivity: 2,
+      },
+      pagination: {
+         el: 'office__gallery-pagination',
+         clickable: true,
+      },
+      freeMode: {
+         enabled: true,
+         momentum: true,
+         momentumRatio: 1,
+         momentumBounce: false,
+      },
+      pagination: {
+         el: '.office__gallery-pagination',
+         clickable: true,
+      },
+      breakpoints: {
+         320: {
+            direction: 'horizontal',
+            freeMode: false,
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+         },
+         1000: {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 10,
+         },
+      },
+   });
+
+}
+
+
+/*==========================================================================
+Офис галерея
+============================================================================*/
+document.addEventListener('DOMContentLoaded', () => {
+   const openBtn = document.querySelector('.office__gallery-open');
+
+   if (!openBtn) return;
+   if (typeof Fancybox === 'undefined' || !Fancybox.show) return;
+
+   openBtn.addEventListener('click', () => {
+      const slides = document.querySelectorAll(
+         '.office__gallery-slider-2 .office__gallery-item'
+      );
+
+      if (!slides.length) return;
+
+      const items = Array.from(slides)
+         .map(slide => {
+            const img = slide.querySelector('img');
+            if (!img || !img.src) return null;
+
+            return {
+               src: img.src,
+               type: 'image',
+               caption: ''
+            };
+         })
+         .filter(Boolean);
+
+      if (!items.length) return;
+
+      Fancybox.show(items, {
+         Thumbs: false,
+         Toolbar: true,
       });
    });
 });

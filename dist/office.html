@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="format-detection" content="telephone=no">
+
+   <!-- Favicon -->
+   <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="img/fav/android-chrome-192x192.png">
+   <link rel="icon" type="image/png" sizes="512x512" href="img/fav/android-chrome-512x512.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+   <link rel="icon" type="image/x-icon" href="img/fav/favicon.ico">
+   <meta name="msapplication-TileColor" content="#ececf2">
+   <meta name="theme-color" content="#ececf2">
+
+   <!-- SEO -->
+   <link rel="canonical" href="https://example.com/">
+   <meta name="description"
+      content="Профессиональный риелтор по аренде офисов в Москве. Подбор помещений под ваш бюджет, организация просмотров, ведение переговоров и юридическое сопровождение. Бесплатная консультация.">
+   <meta name="keywords"
+      content="аренда офисов, аренда офиса Москва, офисы в аренду, риелтор Москва, коммерческая недвижимость Москва">
+   <meta name="robots" content="index, follow">
+
+   <!-- Open Graph (Facebook, мессенджеры) -->
+   <meta property="og:title" content="Аренда офисов в Москве — [Имя/Агентство]">
+   <meta property="og:description"
+      content="Профессиональный риелтор по аренде офисов в Москве: подбор, показы, переговоры и юридическое сопровождение.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="">
+   <meta property="og:site_name" content="[Имя/Агентство]">
+   <meta property="og:locale" content="ru_RU">
+   <meta property="og:image" content="img/fav/og-image.jpg">
+   <meta property="og:image:alt" content="Аренда офисов в Москве — [Имя/Агентство]">
+
+   <!-- Twitter Card -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Аренда офисов в Москве — [Имя/Агентство]">
+   <meta name="twitter:description"
+      content="Подбор офисов в аренду по Москве. Быстро, безопасно, с юридическим сопровождением.">
+   <meta name="twitter:image" content="img/fav/og-image.jpg">
+   <meta name="twitter:site" content="@your_twitter">
+
+   <!-- Styles -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>[Имя/Агентство] | Главная</title>
+</head>
+
+<body>
+   <div class="preloader">
+      <div class="preloader__block">
+         <div class="preloader__loader"></div>
+         <div class="preloader__image">
+            <div class="preloader__image-wrapper">
+               <img src="img/preloader.png" alt="">
+               <img src="img/preloader.png" alt="">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="wrapper">
+      <header class="header white">
+   <div class="header__body container">
+      <div class="header__logo">
+         <a href="index.html" aria-label="На главную">
+            <img src="img/logo.png" width="177" height="64" alt="logo">
+         </a>
+      </div>
+      <div class="header__menu menu">
+         <div class="menu__icon"><span></span></div>
+         <div class="menu__body">
+            <ul class="menu__list">
+               <li><a href="index.html" class="menu__link active">Главная</a></li>
+               <li class="menu__item menu__item--has-submenu">
+                  <a href="catalog.html" class="menu__link">Бизнес-центры</a>
+                  <button class="submenu-toggle" type="button" aria-label="Открыть подменю">
+                     <img src="img/icons/chevron-right.svg" width="14" height="14" alt="chevron-right">
+                  </button>
+                  <ul class="submenu">
+                     <li><a href="#" class="submenu__link">Ссылка 1</a></li>
+                     <li><a href="#" class="submenu__link">Ссылка 2</a></li>
+                     <li><a href="#" class="submenu__link">Ссылка 3</a></li>
+                  </ul>
+               </li>
+               <li><a href="" class="menu__link">Для собственников</a></li>
+               <li><a href="" class="menu__link">Контакты</a></li>
+            </ul>
+            <div class="menu__contacts">
+               <a href="tel:+74951234567" class="menu__contact">
+                  <div class="menu__contact-icon">
+                     <svg>
+                        <use xlink:href="#icon-telephone"></use>
+                     </svg>
+                  </div>
+                  +7 495 123 45 67
+               </a>
+               <a href="mailto:example@company.com" class="menu__contact">
+                  <div class="menu__contact-icon">
+                     <svg>
+                        <use xlink:href="#icon-mail"></use>
+                     </svg>
+                  </div>
+                  example@company.com
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="header__more">
+         <div class="header__tel">
+            <a href="tel:+74951234567">+7 495 123 45 67</a>
+         </div>
+         <div class="header__buttons">
+            <div class="header__callback">
+               <button type="button" class="open-popup btn" data-popup="callback-popup">
+                  <img src="img/icons/telephone.svg" width="16" height="16" alt="tel icon">
+                  Заказать звонок
+               </button>
+            </div>
+            <div class="header__socials">
+               <a href="" class="header__social" aria-label="Перейти в whatsapp">
+                  <img src="img/icons/whatsapp.svg" width="20" height="20" alt="whatsapp icon">
+               </a>
+               <a href="" class="header__social" aria-label="Перейти в telegram">
+                  <img src="img/icons/telegram.svg" width="20" height="20" alt="telegram icon">
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+      <main>
+         <section class="office">
+            <div class="office__body container">
+               <div class="office__gallery">
+                  <div class="office__gallery-slider swiper">
+                     <div class="office__gallery-wrapper swiper-wrapper">
+                        <div class="office__gallery-item-small swiper-slide">
+                           <img src="img/offices/6.jpg" alt="">
+                        </div>
+                        <div class="office__gallery-item-small swiper-slide">
+                           <img src="img/offices/5.jpg" alt="">
+                        </div>
+                        <div class="office__gallery-item-small swiper-slide">
+                           <img src="img/offices/7.jpg" alt="">
+                        </div>
+                        <div class="office__gallery-item-small swiper-slide">
+                           <img src="img/offices/8.jpg" alt="">
+                        </div>
+                        <div class="office__gallery-item-small swiper-slide">
+                           <img src="img/offices/9.jpg" alt="">
+                        </div>
+                        <div class="office__gallery-item-small swiper-slide">
+                           <img src="img/offices/10.jpg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper office__gallery-slider-2">
+                     <div class="office__gallery-wrapper-2 swiper-wrapper">
+                        <div class="office__gallery-item swiper-slide">
+                           <img src="img/offices/6.jpg" alt="">
+                        </div>
+                        <div class="office__gallery-item swiper-slide">
+                           <img src="img/offices/5.jpg" alt="">
+                        </div>
+                        <div class="office__gallery-item swiper-slide">
+                           <img src="img/offices/7.jpg" alt="">
+                        </div>
+                        <div class="office__gallery-item swiper-slide">
+                           <img src="img/offices/8.jpg" alt="">
+                        </div>
+                        <div class="office__gallery-item swiper-slide">
+                           <img src="img/offices/9.jpg" alt="">
+                        </div>
+                        <div class="office__gallery-item swiper-slide">
+                           <img src="img/offices/10.jpg" alt="">
+                        </div>
+                     </div>
+                     <div class="office__gallery-controls">
+                        <div class="office__gallery-pagination"></div>
+                        <button type="button" class="office__gallery-open" aria-label="Открыть галерею">
+                           <img src="img/icons/zoom-in.svg" width="20" height="20" alt="search icon">
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="office__card">
+                  <div class="office__panel">
+                     <div class="office__panel-class">класс "A+"</div>
+                     <div class="description__rating">
+                        <span class="rating-label">Рейтинг бизнес-центра</span>
+                        <span class="rating -green">9.0</span>
+                     </div>
+                     <div class="offices__item-update">
+                        <img src="img/icons/calendar.svg" width="14" height="14" alt="calendar">
+                        обновлено 02.12.2025
+                     </div>
+                  </div>
+                  <h1 class="office__name">Аренда офиса 280 м²</h1>
+                  <div class="office__address">
+                     <a href="business-center.html" class="office__address-image">
+                        <img src="img/bc/1-thumb.jpg" width="120" height="120" alt="bc">
+                     </a>
+                     <div class="office__address-info">
+                        <a href="business-center.html" class="office__bc">Бизнес-центр "Фьюжн Парк"</a>
+                        <div class="office__address-text">
+                           <img src="img/icons/location-bk.png" alt=""> Москва, Пресненская набережная, 12
+                        </div>
+                     </div>
+                  </div>
+                  <div class="offices__item-prices">
+                     <div class="offices__item-price">
+                        <span>цена м² в год</span>
+                        346 600 ₽
+                     </div>
+                     <div class="offices__item-price">
+                        <span>цена в месяц</span>
+                        552 600 ₽
+                     </div>
+                  </div>
+                  <div class="description__infrastructures">
+                     <div class="description__orient-label">Характеристики офиса</div>
+                     <div class="description__infrastructures-group">
+                        <div class="description__infrastructure">
+                           <span>площадь</span>
+                           280 м²
+                        </div>
+                        <div class="description__infrastructure">
+                           <span>этаж</span>
+                           6 из 30
+                        </div>
+                        <div class="description__infrastructure">
+                           <span>планировка</span>
+                           смежная
+                        </div>
+                        <div class="description__infrastructure">
+                           <span>мебель</span>
+                           мебелирована
+                        </div>
+                        <div class="description__infrastructure">
+                           <span>санузел</span>
+                           1 санузел
+                        </div>
+                        <div class="description__infrastructure">
+                           <span>готовность</span>
+                           готово к въезду
+                        </div>
+                     </div>
+                  </div>
+                  <!-- <div class="description__characteristics">
+                     <div class="description__characteristic">
+                        <span>Этаж</span> 6
+                     </div>
+                     <div class="description__characteristic">
+                        <span>Площадь</span> 280 м²
+                     </div>
+                     <div class="description__characteristic">
+                        <span>Планировка</span> смежная
+                     </div>
+                     <div class="description__characteristic">
+                        <span>Мебель</span> мебелирована
+                     </div>
+                  </div> -->
+                  <div class="office__buttons">
+                     <a href="" class="btn -blue"><img src="img/icons/pdf.svg" width="24" height="24" alt="pdf"> Скачать
+                        pdf</a>
+                     <a href="business-center.html" class="btn">Забронировать</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer element-animation">
+   <div class="footer__body container">
+      <div class="footer__main">
+         <div class="footer__col">
+            <div class="footer__logo">
+               <img src="img/logo.png" width="177" height="64" alt="logo">
+            </div>
+            <div class="footer__subtitle">
+               С 2005 года помогаем компаниям находить удобные и современные офисы в Москве. Берём на себя весь процесс
+               аренды — от подбора до подписания договора.
+            </div>
+            <div class="footer__subscribe">
+               <div class="footer__subscribe-label">Подпишитесь на обновления</div>
+               <div class="footer__subscribe-form">
+                  <div class="footer__subscribe-area">
+                     <input type="email" placeholder="Введите ваш email">
+                     <button type="button" class="footer__subscribe-btn">Подписаться</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__col">
+            <div class="footer__col-label">Компания</div>
+            <ul>
+               <li><a href="index.html">Главная</a></li>
+               <li><a href="catalog.html">Каталог БЦ</a></li>
+               <li><a href="about.html">О нас</a></li>
+               <li><a href="index.html#reviews">Отзывы</a></li>
+            </ul>
+         </div>
+         <div class="footer__col">
+            <div class="footer__col-label">Ресурсы</div>
+            <ul>
+               <li><a href="index.html">Контакты</a></li>
+               <li><a href="owner.html">Для собственников</a></li>
+            </ul>
+         </div>
+         <div class="footer__col">
+            <div class="footer__col-label">Управление</div>
+            <ul>
+               <li><a href="index.html">Регистрация</a></li>
+               <li><a href="owner.html">Управление бронированием</a></li>
+               <li><a href="owner.html">Шофёрский сервис</a></li>
+               <li><a href="owner.html">Статус рейса</a></li>
+            </ul>
+         </div>
+         <div class="footer__col">
+            <div class="footer__col-label">Связаться с нами</div>
+            <ul>
+               <li><span>
+                     <img src="img/icons/location-bk.png" width="24" height="24" alt="geo icon">
+                     Москва, ул. Ленина, д. 10</span></li>
+               <li><a href="tel:+74951234567" class="telephone"><img src="img/icons/telephone.png" width="24"
+                        height="24" alt="telephone icon"> +7 495 123 45 67</a></li>
+               <li><a href="mailto:info@company.ru"><img src="img/icons/mail.png" width="24" height="24"
+                        alt="mail icon">
+                     info@company.ru</a></li>
+            </ul>
+            <div class="footer__socials">
+               <div class="footer__socials-label">Следите за нами!</div>
+               <div class="footer__soc-items">
+                  <a href="" class="footer__social" aria-label="Instagram">
+                     <img src="img/icons/instagram.png" width="24" height="24" alt="instagram logo">
+                  </a>
+                  <a href="" class="footer__social" aria-label="Facebook">
+                     <img src="img/icons/facebook.png" width="24" height="24" alt="facebook logo">
+                  </a>
+                  <a href="" class="footer__social" aria-label="LinkedIn">
+                     <img src="img/icons/linkedin.png" width="24" height="24" alt="linkedin logo">
+                  </a>
+                  <a href="" class="footer__social" aria-label="Twitter">
+                     <img src="img/icons/twitter.png" width="24" height="24" alt="twitter logo">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer__bottom">
+         <p>© CompanyName 2025</p>
+      </div>
+   </div>
+</footer>
+
+   </div>
+   <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+   style="display: none;"><svg fill="currentColor" class="bbi bbi-arrow-left" viewBox="0 0 16 16" id="icon-arrow-left"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+   </svg><svg fill="currentColor" class="abi abi-arrow-left-right" viewBox="0 0 16 16" id="icon-arrow-left-right"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5" />
+   </svg><svg fill="currentColor" class="cbi cbi-arrow-right" viewBox="0 0 16 16" id="icon-arrow-right"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+   </svg><svg fill="currentColor" class="dbi dbi-calendar2-week" viewBox="0 0 16 16" id="icon-calendar"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+      <path
+         d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+   </svg><svg fill="currentColor" class="ebi ebi-chevron-down" viewBox="0 0 16 16" id="icon-chevron-down"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+   </svg><svg fill="currentColor" class="fbi fbi-chevron-up" viewBox="0 0 16 16" id="icon-chevron-up"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+   </svg><svg fill="currentColor" class="gbi gbi-geo-alt" viewBox="0 0 16 16" id="icon-geo"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+   </svg><svg fill="currentColor" class="hbi hbi-list" viewBox="0 0 16 16" id="icon-list"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+   </svg><svg fill="currentColor" class="ibi ibi-envelope" viewBox="0 0 16 16" id="icon-mail"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+   </svg><svg fill="currentColor" class="jbi jbi-person" viewBox="0 0 16 16" id="icon-person"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+   </svg><svg fill="currentColor" class="kbi kbi-search" viewBox="0 0 16 16" id="icon-search"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+   </svg><svg fill="currentColor" class="lbi lbi-telephone" viewBox="0 0 16 16" id="icon-telephone"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+   </svg>
+</svg>
+   <button type="button" class="go-to-top">
+      <img src="img/icons/arrow-up-icon.svg" width="30" height="30" alt="arrow up">
+   </button>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>
