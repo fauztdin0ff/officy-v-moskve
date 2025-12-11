@@ -1365,6 +1365,9 @@ Advantages
 /*==========================================================================
 Latest
 ============================================================================*/
+.latest.-light {
+  background: #f8f8ff;
+}
 .latest__body {
   padding: 40px 0;
 }
@@ -1384,6 +1387,11 @@ Latest
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+}
+@media (width < 767px) {
+  .latest__title {
+    text-wrap: balance;
+  }
 }
 .latest__content {
   min-width: 0;
@@ -1481,6 +1489,14 @@ Latest
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+.card-preview__area {
+  font-size: clamp(20px, 1.406vw, 54px);
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 8px;
+  color: #4d73fc;
+  margin-top: 8px;
 }
 .card-preview__name {
   font-size: clamp(16px, 1.094vw, 24px);
