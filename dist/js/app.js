@@ -970,6 +970,53 @@ document.addEventListener('DOMContentLoaded', () => {
    });
 });
 
+
+/*==========================================================================
+NEW BC PAGE SLIDER
+============================================================================*/
+const bcContainer = document.querySelector('.bc-hero__slider');
+if (bcContainer) {
+   const swiper = new Swiper('.bc-hero__slider', {
+      loop: false,
+      direction: 'vertical',
+      /*  effect: "fade", */
+      speed: 1000,
+      slidesPerView: 1,
+      watchOverflow: true,
+      simulateTouch: true,
+      mousewheel: true,
+      grabCursor: false,
+      slideToClickedSlide: false,
+      speed: 1500,
+      /* autoplay: {
+         delay: 5000,
+         disableOnInteraction: false
+      }, */
+      pagination: {
+         el: '.bc-hero__fraction',
+         type: 'custom',
+         clickable: true,
+         renderCustom: function (swiper, current, total) {
+            let paginationHtml = '';
+            for (let i = 1; i <= total; i++) {
+               paginationHtml += `<span class="swiper-pagination-item ${i === current ? 'active' : ''
+                  }" data-index="${i}">${i.toString().padStart(2, '0')}.</span>`;
+            }
+            return paginationHtml;
+         },
+      },
+   });
+
+   const paginationElement = document.querySelector('.bc-hero__fraction');
+   if (paginationElement) {
+      paginationElement.addEventListener('click', (e) => {
+         if (e.target.classList.contains('swiper-pagination-item')) {
+            const index = parseInt(e.target.getAttribute('data-index'), 10);
+            swiper.slideToLoop(index - 1);
+         }
+      });
+   }
+}
 })();
 
 /******/ })()

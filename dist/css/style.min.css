@@ -234,6 +234,17 @@ Header
 .header.white {
   background: #fff;
 }
+.header.blur {
+  position: absolute;
+  background: transparent;
+  padding-top: 40px;
+}
+.header.blur .header__body {
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(4px);
+  padding-inline: 40px;
+}
 .header__body {
   position: relative;
   padding: 18px 0;
@@ -5649,5 +5660,308 @@ Office info
 @media (width < 767px) {
   .office-info__map-frame {
     height: 240px;
+  }
+}
+
+/*==========================================================================
+NEW BC PAGE
+============================================================================*/
+.bc-hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 660px;
+  position: relative;
+}
+.bc-hero__slider {
+  width: 100%;
+  height: 100%;
+}
+.bc-hero__slider-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.bc-hero__slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.bc-hero__slide::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(40, 40, 52, 0.4) 100%), linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(40, 40, 52, 0.2) 100%);
+  z-index: 1;
+}
+.bc-hero__slide.swiper-slide-active text {
+  animation: draw 100s linear forwards;
+}
+.bc-hero__slide.swiper-slide-active .bc-hero__slide-image {
+  transform: scale(1.1);
+}
+.bc-hero__slide.swiper-slide-active .bc-hero__slide-info {
+  opacity: 1;
+}
+.bc-hero__slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  transition: all 5s linear 0s;
+  user-select: none;
+}
+.bc-hero__slide-info {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transition: all 1s linear 0s;
+}
+@media (width < 1000px) {
+  .bc-hero__slide-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.bc-hero__slide-title {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 0.9em;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.bc-hero__slide-title span {
+  display: none;
+}
+.bc-hero__slide-title text {
+  font-size: 86px;
+  color: transparent;
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+}
+.bc-hero__slide-title svg {
+  margin-bottom: -35px;
+  width: auto;
+  height: auto;
+}
+@media (width < 1000px) {
+  .bc-hero__slide-title {
+    text-align: center;
+    font-size: 64px;
+    width: 100%;
+  }
+  .bc-hero__slide-title svg {
+    display: none;
+    margin-bottom: 0;
+    height: auto;
+    width: auto;
+  }
+  .bc-hero__slide-title span {
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+  }
+}
+@media (width < 479px) {
+  .bc-hero__slide-title {
+    font-size: 48px;
+  }
+  .bc-hero__slide-title span {
+    display: block;
+  }
+}
+@media (width < 361px) {
+  .bc-hero__slide-title {
+    font-size: 42px;
+  }
+}
+.bc-hero__slide-subtitle {
+  font-size: 18px;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+@media (width < 1000px) {
+  .bc-hero__slide-subtitle {
+    text-align: center;
+  }
+}
+@media (width < 479px) {
+  .bc-hero__slide-subtitle {
+    font-size: 16px;
+  }
+}
+.bc-hero__fraction {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  right: 80px;
+  height: auto;
+  justify-content: center;
+  left: unset;
+  width: auto;
+  display: inline;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+.bc-hero__fraction .swiper-pagination-item {
+  font-weight: 900;
+  font-size: 30px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.bc-hero__fraction .swiper-pagination-item:not(:last-child) {
+  margin-bottom: 45px;
+}
+.bc-hero__fraction .swiper-pagination-item.active {
+  cursor: default;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  text-stroke: 1px #fff;
+}
+.bc-hero__fraction .swiper-pagination-item::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  opacity: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  text-stroke: 1px #fff;
+}
+.bc-hero__fraction .swiper-pagination-item:nth-child(1)::after {
+  content: "01.";
+}
+.bc-hero__fraction .swiper-pagination-item:nth-child(2)::after {
+  content: "02.";
+}
+.bc-hero__fraction .swiper-pagination-item:nth-child(3)::after {
+  content: "03.";
+}
+.bc-hero__fraction .swiper-pagination-item:nth-child(4)::after {
+  content: "04.";
+}
+.bc-hero__fraction .swiper-pagination-item:nth-child(5)::after {
+  content: "05.";
+}
+@media (hover: hover) {
+  .bc-hero__fraction .swiper-pagination-item:not(.active):hover::after {
+    animation: scaled 0.5s ease 0s;
+    cursor: pointer;
+  }
+}
+@media (width < 1000px) {
+  .bc-hero__fraction {
+    display: none;
+  }
+}
+.bc-hero__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+@media (width < 1000px) {
+  .bc-hero__contacts {
+    justify-content: center;
+    width: 100%;
+    right: 0;
+  }
+}
+@media (width < 600px) {
+  .bc-hero__contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.bc-hero__left {
+  color: #fff;
+  opacity: 0.7;
+}
+@media (width < 600px) {
+  .bc-hero__left {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+.bc-hero__mails {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+}
+@media (width < 600px) {
+  .bc-hero__mails {
+    align-items: center;
+  }
+}
+.bc-hero__contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #fff;
+}
+.bc-hero__contact span {
+  color: #fff;
+  font-weight: 400;
+}
+.bc-hero__contact svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  fill: #fff;
+}
+@media (hover: hover) {
+  .bc-hero__contact:hover svg {
+    fill: #fff;
+    color: #fff;
+  }
+}
+
+@keyframes draw {
+  10% {
+    stroke-dashoffset: 0;
+    stroke-width: 0px;
+  }
+  10%, 100% {
+    stroke-width: 1px;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scaled {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(5);
+    opacity: 0;
   }
 }
