@@ -6380,7 +6380,7 @@ NEW BC PAGE
     margin-inline: auto;
   }
   .bc-hero__slide .offices__wrapper {
-    min-height: unset;
+    min-height: 300px;
   }
   .bc-hero__slide .office-info__related-btns {
     justify-content: center;
