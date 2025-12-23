@@ -5915,12 +5915,14 @@ NEW BC PAGE
 }
 .bc-hero__slide .offices__tabs {
   margin: 0;
+  gap: 0;
 }
 .bc-hero__slide .offices__tab {
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px 0 0 20px;
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(40px);
   padding: 20px 64px;
+  color: #ccc;
 }
 .bc-hero__slide .offices__tab span {
   background: rgba(255, 255, 255, 0.4);
@@ -5928,16 +5930,22 @@ NEW BC PAGE
   width: 22px;
   height: 22px;
   flex: 0 0 22px;
+  color: #fff;
 }
 .bc-hero__slide .offices__tab.active {
   background: #4d73fc;
+  color: #fff;
 }
 .bc-hero__slide .offices__tab.active span {
   background: rgb(255, 255, 255);
+  color: #4d73fc;
+}
+.bc-hero__slide .offices__tab:nth-child(2) {
+  border-radius: 0 20px 20px 0;
 }
 @media (hover: hover) {
   .bc-hero__slide .offices__tab:not(.active):hover {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.3);
   }
 }
 .bc-hero__slide .office-info__related-offices {
