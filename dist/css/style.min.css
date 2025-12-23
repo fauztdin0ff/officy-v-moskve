@@ -7244,7 +7244,7 @@ Popups general
 .popup__form .policy-agree__text {
   color: #ccc;
 }
-.popup__form .policy-agree__text a {
+.popup__form .policy-agree__text button {
   color: #ccc;
   text-decoration: underline;
   text-decoration-thickness: from-font;
@@ -7403,11 +7403,6 @@ Popups general
 }
 .offices-popup .office-info__related-name {
   color: #fff;
-}
-@media (hover: hover) {
-  .offices-popup .office-info__related-name:hover {
-    color: #4d73fc;
-  }
 }
 @media (width < 767px) {
   .offices-popup .office-info__related-name {
