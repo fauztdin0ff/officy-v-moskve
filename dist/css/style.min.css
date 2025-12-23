@@ -5845,6 +5845,9 @@ NEW BC PAGE
   background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(40, 40, 52, 0.4) 100%), linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(40, 40, 52, 0.2) 100%);
   z-index: 1;
 }
+.bc-hero__slide:first-child::after {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(40, 40, 52, 0.7) 100%), linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(40, 40, 52, 0.5) 100%);
+}
 .bc-hero__slide.swiper-slide-active text {
   animation: draw 100s linear forwards;
 }
@@ -5918,7 +5921,7 @@ NEW BC PAGE
 }
 .bc-hero__slide .offices__tab {
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(40px);
   padding: 20px 64px;
 }
@@ -6992,7 +6995,7 @@ NEW BC PAGE
     stroke-width: 0px;
   }
   10%, 100% {
-    stroke-width: 1px;
+    stroke-width: 2px;
     stroke-dashoffset: 0;
   }
 }
