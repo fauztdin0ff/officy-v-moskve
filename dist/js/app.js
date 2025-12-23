@@ -861,6 +861,7 @@ document.addEventListener('DOMContentLoaded', () => {
    const tabs = document.querySelectorAll('.offices__tab');
    const items = document.querySelectorAll('.offices__items');
    const loader = document.querySelector('.loading-icon');
+   let timeoutId = null; // для таймера лоадера
 
    if (!tabs.length || !items.length || !loader) return;
 
@@ -870,24 +871,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
          if (tab.classList.contains('active')) return;
 
+         // отменяем предыдущий таймер, если он есть
+         if (timeoutId) {
+            clearTimeout(timeoutId);
+            timeoutId = null;
+         }
+
+         // активный таб
          tabs.forEach(t => t.classList.remove('active'));
          tab.classList.add('active');
 
+         // показать лоадер
          loader.classList.add('active');
 
+         // скрыть все табы
          items.forEach(item => item.classList.remove('active'));
 
-         setTimeout(() => {
+         // сбросить все анимации
+         document
+            .querySelectorAll('.element-animation')
+            .forEach(el => el.classList.remove('element-show'));
+
+         // запускаем таймер для имитации загрузки
+         timeoutId = setTimeout(() => {
             loader.classList.remove('active');
 
-            const targetItem = document.querySelector(`.offices__items[data-tab="${target}"]`);
-            if (targetItem) {
-               targetItem.classList.add('active');
-            }
-         }, 600);
+            const targetItem = document.querySelector(
+               `.offices__items[data-tab="${target}"]`
+            );
+
+            if (!targetItem) return;
+
+            // показываем контент
+            targetItem.classList.add('active');
+
+            // 🔹 даём браузеру отрендерить контент, потом запускаем анимацию
+            requestAnimationFrame(() => {
+               requestAnimationFrame(() => {
+                  targetItem
+                     .querySelectorAll('.element-animation')
+                     .forEach(el => el.classList.add('element-show'));
+               });
+            });
+
+            timeoutId = null; // таймер отработал
+         }, 300); // длительность лоадера
       });
    });
 });
+
+
 
 
 /*==========================================================================

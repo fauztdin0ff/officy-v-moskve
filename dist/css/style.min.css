@@ -5879,6 +5879,19 @@ NEW BC PAGE
   transition: all 0.3s ease;
   margin: 0;
   white-space: nowrap;
+  overflow: hidden;
+}
+.bc-hero__slide .offices__more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  pointer-events: none;
+  animation: shine 5s ease-in-out infinite;
 }
 @media (hover: hover) {
   .bc-hero__slide .offices__more:hover {
@@ -6174,6 +6187,9 @@ NEW BC PAGE
 }
 .bc-hero__slide .description__characteristic span {
   color: #ccc;
+}
+.bc-hero__slide .description__rating {
+  margin-top: 5px;
 }
 .bc-hero__slide .description__rating-stars {
   margin-top: 5px;
@@ -6518,6 +6534,7 @@ NEW BC PAGE
   .bc-hero__slide .description__rating {
     display: block;
     order: -1;
+    margin-top: 0;
   }
   .bc-hero__slide .reviews__slider {
     background: none;
@@ -7003,6 +7020,9 @@ body:has(.bc-hero) footer {
     background: #fff;
     max-width: 100%;
   }
+  .bc-hero__cont .description__aside-manager-role {
+    color: #7a7f85;
+  }
 }
 @media (width < 767px) {
   .bc-hero__cont {
@@ -7119,7 +7139,9 @@ body:has(.bc-hero) footer {
 }
 @media (width < 550px) {
   .bc-hero__cont-tel a {
-    font-size: 6vw;
+    margin-top: 2px;
+    font-size: 5vw;
+    gap: 5px;
   }
 }
 .bc-hero__cont-callback .btn {
@@ -7145,7 +7167,7 @@ Popups general
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   padding: 5rem 1.5rem;
-  z-index: 99;
+  z-index: 999;
   background: rgba(0, 0, 0, 0.7);
   max-height: 100vh;
   overflow-y: auto;
@@ -7362,11 +7384,25 @@ Popups general
 .offices-popup .offices-popup__items.active {
   display: block;
 }
+.offices-popup .offices-popup__item {
+  padding-inline: 10px;
+}
+.offices-popup .offices-popup__item:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.05);
+}
+@media (hover: hover) {
+  .offices-popup .offices-popup__item:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
 @media (width < 767px) {
   .offices-popup .office-info__related-office {
     padding: 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
+}
+.offices-popup .office-info__related-name {
+  color: #fff;
 }
 @media (hover: hover) {
   .offices-popup .office-info__related-name:hover {
@@ -7398,5 +7434,16 @@ Popups general
   }
   .offices-popup .office-info__related-button .btn {
     width: 100%;
+  }
+}
+@keyframes shine {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 200%;
+  }
+  100% {
+    left: 200%;
   }
 }
