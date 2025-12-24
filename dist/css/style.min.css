@@ -6347,6 +6347,7 @@ NEW BC PAGE
     height: 22px;
     flex: 0 0 22px;
     font-weight: 600;
+    color: #7a7f85;
   }
   .bc-hero__slide .office-info__related-name {
     font-size: 16px;
@@ -6653,6 +6654,7 @@ NEW BC PAGE
   .bc-hero__slide .office-info__related-tel {
     color: #2cb742;
     font-size: 16px;
+    flex: 0 1 50%;
   }
   .bc-hero__slide .office-info__related-floor {
     color: #4d73fc;
@@ -6695,6 +6697,9 @@ NEW BC PAGE
   .bc-hero__slide .description__aside-content {
     min-height: 310px;
   }
+  .bc-hero__slide .office-info__related-tel {
+    font-size: 4.4vw;
+  }
 }
 @media (width < 399px) {
   .bc-hero__slide .office-info__related-office {
@@ -6703,9 +6708,6 @@ NEW BC PAGE
   .bc-hero__slide .office-info__related-btn {
     width: auto;
     flex: 0 1 50%;
-  }
-  .bc-hero__slide .office-info__related-tel {
-    font-size: 14px;
   }
   .bc-hero__slide .offices__tab {
     font-size: 18px;
