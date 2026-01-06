@@ -52,78 +52,7 @@
 
 <body>
    <div class="wrapper">
-      <!-- <header class="header blur">
-   <div class="header__body container">
-      <div class="header__logo">
-         <a href="index.html" aria-label="На главную">
-            <img src="img/logo.png" width="177" height="64" alt="logo">
-         </a>
-      </div>
-      <div class="header__menu menu">
-         <div class="menu__icon"><span></span></div>
-         <div class="menu__body">
-            <ul class="menu__list">
-               <li><a href="index.html" class="menu__link active">Главная</a></li>
-               <li class="menu__item menu__item--has-submenu">
-                  <a href="catalog.html" class="menu__link">Бизнес-центры</a>
-                  <button class="submenu-toggle" type="button" aria-label="Открыть подменю">
-                     <img src="img/icons/chevron-right.svg" width="14" height="14" alt="chevron-right">
-                  </button>
-                  <ul class="submenu">
-                     <li><a href="#" class="submenu__link">Ссылка 1</a></li>
-                     <li><a href="#" class="submenu__link">Ссылка 2</a></li>
-                     <li><a href="#" class="submenu__link">Ссылка 3</a></li>
-                  </ul>
-               </li>
-               <li><a href="" class="menu__link">Для собственников</a></li>
-               <li><a href="" class="menu__link">Контакты</a></li>
-            </ul>
-            <div class="menu__contacts">
-               <a href="tel:+74951234567" class="menu__contact">
-                  <div class="menu__contact-icon">
-                     <svg>
-                        <use xlink:href="#icon-telephone"></use>
-                     </svg>
-                  </div>
-                  +7 495 123 45 67
-               </a>
-               <a href="mailto:example@company.com" class="menu__contact">
-                  <div class="menu__contact-icon">
-                     <svg>
-                        <use xlink:href="#icon-mail"></use>
-                     </svg>
-                  </div>
-                  example@company.com
-               </a>
-            </div>
-         </div>
-      </div>
-      <div class="header__more">
-         <div class="header__tel">
-            <a href="tel:+74951234567">+7 495 123 45 67</a>
-         </div>
-         <div class="header__buttons">
-            <div class="header__callback">
-               <button type="button" class="open-popup btn" data-popup="callback-popup">
-                  <img src="img/icons/telephone.svg" width="16" height="16" alt="tel icon">
-                  Заказать звонок
-               </button>
-            </div>
-            <div class="header__socials">
-               <a href="" class="header__social" aria-label="Перейти в whatsapp">
-                  <img src="img/icons/whatsapp.svg" width="20" height="20" alt="whatsapp icon">
-               </a>
-               <a href="" class="header__social" aria-label="Перейти в telegram">
-                  <img src="img/icons/telegram.svg" width="20" height="20" alt="telegram icon">
-               </a>
-            </div>
-         </div>
-      </div>
-   </div>
-</header> -->
-
-
-<header class="header blur header-sec">
+      <header class="header blur header-sec">
    <div class="header__body container">
       <div class="header__logo">
          <a href="#start" class="js-slide-link" data-slide="0" aria-label="На главную">
@@ -138,7 +67,8 @@
                <li><a href="#about" class="menu__link js-slide-link" data-slide="2">О бизнес-центре</a></li>
                <li><a href="#reviews" class="menu__link js-slide-link" data-slide="3">Отзывы</a></li>
                <li><a href="#geo" class="menu__link js-slide-link" data-slide="4">Расположение</a></li>
-               <li><a href="#geo" class="menu__link js-slide-link" data-slide="5">Контакты</a></li>
+               <li><a href="#interior" class="menu__link js-slide-link" data-slide="5">Интерьер</a></li>
+               <li><a href="#geo" class="menu__link js-slide-link" data-slide="6">Контакты</a></li>
             </ul>
             <div class="menu__contacts">
                <a href="tel:+74951234567" class="menu__contact">
@@ -1000,6 +930,61 @@
                               </div>
                               <div class="description__aside-content">
                                  <div class="description__aside-map"><img src="img/bc/map.png" alt=""></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="bc-hero__slide swiper-slide" id="interior">
+                     <img src="img/bc/5.webp" class="bc-hero__slide-image" alt="">
+                     <div class="bc-hero__slide-info container">
+                        <div class="bc-hero__slide-gallery">
+                           <div class="bc-hero__slide-gallery-head">
+                              <div class="bc-hero__slide-gallery-text">
+                                 <div class="reviews__title">Интерьер</div>
+                                 <div class="bc-hero__slide-gallery-subtitle">В бизнес-центре представлено более [N]
+                                    офисных помещений различной площади и планировки. Офисы с качественной отделкой,
+                                    современными инженерными системами и продуманными общественными зонами. Пространства
+                                    подходят как для небольших команд,
+                                    так и для крупных компаний.</div>
+
+                              </div>
+                              <div class="bc-hero__slide-gallery-open">
+                                 <button type="button" class="btn js-open-offices-gallery">Открыть галерею</button>
+                              </div>
+                           </div>
+                           <div class="bc-hero__slide-gallery-images swiper">
+                              <div class="swiper-wrapper">
+                                 <div class="bc-hero__slide-gallery-image swiper-slide">
+                                    <a href="img/offices/5.jpg" data-fancybox="offices"></a>
+                                    <img src="img/offices/5.jpg" alt="">
+                                 </div>
+                                 <div class="bc-hero__slide-gallery-image swiper-slide">
+                                    <a href="img/offices/6.jpg" data-fancybox="offices">
+                                       <img src="img/offices/6.jpg" alt="">
+                                    </a>
+                                 </div>
+                                 <div class="bc-hero__slide-gallery-image swiper-slide">
+                                    <a href="img/offices/7.jpg" data-fancybox="offices">
+                                       <img src="img/offices/7.jpg" alt="">
+                                    </a>
+                                 </div>
+                                 <div class="bc-hero__slide-gallery-image swiper-slide">
+                                    <a href="img/offices/5.jpg" data-fancybox="offices">
+                                       <img src="img/offices/5.jpg" alt="">
+                                    </a>
+                                 </div>
+                                 <div class="bc-hero__slide-gallery-image swiper-slide">
+                                    <a href="img/offices/9.jpg" data-fancybox="offices">
+                                       <img src="img/offices/9.jpg" alt="">
+                                    </a>
+                                 </div>
+                                 <div class="bc-hero__slide-gallery-image swiper-slide">
+                                    <a href="img/offices/10.jpg" data-fancybox="offices">
+                                       <img src="img/offices/10.jpg" alt="">
+                                    </a>
+                                 </div>
                               </div>
                            </div>
                         </div>

@@ -1181,6 +1181,72 @@ document.addEventListener('DOMContentLoaded', () => {
       });
    });
 });
+
+
+
+
+/*==========================================================================
+bc slider inter
+============================================================================*/
+const interSlider = document.querySelector(".bc-hero__slide-gallery-images");
+
+if (interSlider) {
+   const interSwiper = new Swiper(interSlider, {
+      loop: true,
+      freeMode: true,
+      spaceBetween: 32,
+      speed: 8000,
+      autoplay: {
+         delay: 0,
+         disableOnInteraction: true
+      },
+      breakpoints: {
+         320: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+         },
+         650: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+         },
+         1100: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+         },
+         1600: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+         }
+      }
+   });
+}
+
+
+/*==========================================================================
+Galleries
+============================================================================*/
+Fancybox.bind('[data-fancybox]', {
+   groupAll: false
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+   const openBtn = document.querySelector('.js-open-offices-gallery');
+   if (!openBtn) return;
+
+   openBtn.addEventListener('click', () => {
+      Fancybox.show(
+         Array.from(document.querySelectorAll('[data-fancybox="offices"]')).map(el => ({
+            src: el.getAttribute('href'),
+            type: 'image',
+         })),
+         {
+            startIndex: 0, // с какого изображения открывать
+         }
+      );
+   });
+});
+
 })();
 
 /******/ })()
