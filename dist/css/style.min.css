@@ -225,11 +225,13 @@ Header
 .header.fx {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04), -6px -3px 14px 0px rgba(0, 0, 0, 0.04), 23px 12px 26px 0px rgba(0, 0, 0, 0.03), 53px 27px 35px 0px rgba(0, 0, 0, 0.02), 94px 48px 42px 0px rgba(0, 0, 0, 0.01);
 }
-.header.fx .header__body {
-  padding: 0;
-}
-.header.fx .header__logo img {
-  transform: scale(0.7);
+@media (width > 981px) {
+  .header.fx .header__body {
+    padding: 0;
+  }
+  .header.fx .header__logo img {
+    transform: scale(0.7);
+  }
 }
 .header.absolute {
   background: transparent;
@@ -3137,7 +3139,7 @@ Catalog
   display: none;
 }
 .aside__body .filters__form-label {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 120%;
 }
 .aside__body .filters__form-row {
