@@ -1247,6 +1247,56 @@ document.addEventListener('DOMContentLoaded', () => {
    });
 });
 
+
+/*==========================================================================
+Map
+============================================================================*/
+ymaps.ready(function () {
+   var mapCenter = [55.742405, 37.629388];
+
+   var myMap = new ymaps.Map('map', {
+      center: mapCenter,
+      zoom: 13,
+   }, {
+      searchControlProvider: 'yandex#search'
+   });
+
+   var iconImageSize = window.innerWidth < 768 ? [85, 100] : [113, 133];
+   var iconImageOffset = window.innerWidth < 768 ? [-42.5, -100] : [-67, -130];
+
+   var MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+   );
+
+   var myPlacemark = new ymaps.Placemark([55.742405, 37.629388], {
+      hintContent: 'Офисы в Москве',
+      balloonContent: 'Россия, Москва, Пятницкий пер., д.3, м.Новокузнецкая'
+   }, {
+      iconLayout: 'default#image',
+      iconImageHref: 'img/map-location.png',
+      iconImageSize: iconImageSize,
+      iconImageOffset: iconImageOffset
+   });
+
+   myMap.behaviors.disable('scrollZoom');
+
+   myMap.controls.remove('searchControl');
+   myMap.controls.remove('fullscreenControl');
+   myMap.controls.remove('rulerControl');
+   myMap.geoObjects.add(myPlacemark);
+
+   window.addEventListener('resize', function () {
+      if (myPlacemark) {
+         var newIconImageSize = window.innerWidth < 768 ? [85, 100] : [170, 200];
+         var newIconImageOffset = window.innerWidth < 768 ? [-42.5, -100] : [-85, -200];
+         myPlacemark.options.set({
+            iconImageSize: newIconImageSize,
+            iconImageOffset: newIconImageOffset,
+         });
+      }
+   });
+});
+
 })();
 
 /******/ })()
