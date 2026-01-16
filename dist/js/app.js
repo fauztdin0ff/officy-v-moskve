@@ -1184,8 +1184,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
 /*==========================================================================
 bc slider inter
 ============================================================================*/
@@ -1301,12 +1299,21 @@ ymaps.ready(function () {
 /*==========================================================================
 Calendar
 ============================================================================*/
-const tomorrow = new Date();
-tomorrow.setDate(tomorrow.getDate() + 1);
+document.addEventListener('DOMContentLoaded', () => {
+   if (typeof AirDatepicker === 'undefined') return;
 
-new AirDatepicker('.datepicker', {
-   minDate: tomorrow,
-   autoClose: true
+   const datepickers = document.querySelectorAll('.datepicker');
+   if (!datepickers.length) return;
+
+   const tomorrow = new Date();
+   tomorrow.setDate(tomorrow.getDate() + 1);
+
+   datepickers.forEach(el => {
+      new AirDatepicker(el, {
+         minDate: tomorrow,
+         autoClose: true
+      });
+   });
 });
 
 })();
