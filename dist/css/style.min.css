@@ -405,6 +405,7 @@ Header
   .header__callback .btn {
     background: #fc9c4d;
     width: 100%;
+    box-shadow: none;
   }
 }
 .header__socials {
