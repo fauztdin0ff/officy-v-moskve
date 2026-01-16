@@ -246,14 +246,14 @@ Submenu
 document.addEventListener("DOMContentLoaded", () => {
    const items = document.querySelectorAll(".menu__item--has-submenu");
 
-   items.forEach((item) => {
-      const toggle = item.querySelector(".submenu-toggle");
+   items.forEach(item => {
+      item.addEventListener("click", (e) => {
+         // если кликнули по ссылке внутри сабменю — ничего не делаем
+         if (e.target.closest(".submenu a")) return;
 
-      toggle.addEventListener("click", (e) => {
          e.preventDefault();
-         e.stopPropagation();
 
-         items.forEach((i) => {
+         items.forEach(i => {
             if (i !== item) i.classList.remove("open");
          });
 
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
    document.addEventListener("click", (e) => {
       if (!e.target.closest(".menu__item--has-submenu")) {
-         items.forEach((item) => item.classList.remove("open"));
+         items.forEach(item => item.classList.remove("open"));
       }
    });
 });
