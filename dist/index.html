@@ -46,9 +46,9 @@
    <!-- Styles -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.min.css">
    <link rel="stylesheet" href="css/style.min.css">
    <title>[Имя/Агентство] | Главная</title>
-
    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 </head>
@@ -79,17 +79,18 @@
             <ul class="menu__list">
                <li><a href="index.html" class="menu__link active">Главная</a></li>
                <li class="menu__item menu__item--has-submenu">
-                  <a href="catalog.html" class="menu__link">Бизнес-центры</a>
+                  <span class="menu__link">Каталог объектов</span>
                   <button class="submenu-toggle" type="button" aria-label="Открыть подменю">
                      <img src="img/icons/chevron-right.svg" width="14" height="14" alt="chevron-right">
                   </button>
                   <ul class="submenu">
-                     <li><a href="#" class="submenu__link">Ссылка 1</a></li>
-                     <li><a href="#" class="submenu__link">Ссылка 2</a></li>
-                     <li><a href="#" class="submenu__link">Ссылка 3</a></li>
+                     <li><a href="catalog.html" class="submenu__link">Бизнес центры класса "А"</a></li>
+                     <li><a href="catalog.html" class="submenu__link">Бизнес центры класса "B"</a></li>
+                     <li><a href="catalog.html" class="submenu__link">Бизнес центры класса "C"</a></li>
                   </ul>
                </li>
-               <li><a href="" class="menu__link">Для собственников</a></li>
+               <li><a href="" class="menu__link">Спецпредложения</a></li>
+               <li><a href="" class="menu__link">Собственникам</a></li>
                <li><a href="contacts.html" class="menu__link">Контакты</a></li>
             </ul>
             <div class="menu__contacts">
@@ -1381,7 +1382,7 @@
       </div>
    </div>
 </footer>
-      <!--Попап галерея-->
+      <!--Попапы-->
 <div class="callback-popup popup" id="callback-popup">
    <div class="callback-popup__body popup__body">
       <div class="callback-popup__title popup__title">Заполните данные и мы <br> свяжемся с вами в ближайшее время</div>
@@ -1877,6 +1878,47 @@
             <li>Телефон: [ваш_телефон]</li>
          </ul>
       </div>
+      <div class="callback-popup__close popup__close">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+            viewBox="0 0 16 16">
+            <path
+               d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+         </svg>
+      </div>
+   </div>
+</div>
+
+<div class="visit-popup popup" id="visit-popup">
+   <div class="callback-popup__body popup__body">
+      <div class="callback-popup__title popup__title">Назначить просмотр</div>
+      <form class="callback-popup__form popup__form">
+         <div class="popup__form-row">
+            <div class="popup__form-area">
+               <input type="text" placeholder="Имя *" required>
+            </div>
+            <div class="popup__form-area">
+               <input type="text" class="datepicker" required readonly placeholder="Выберите дату *">
+            </div>
+         </div>
+         <div class="popup__form-row">
+            <div class="popup__form-area">
+               <input type="text" class=" tel-mask" placeholder="Номер телефона *" required>
+            </div>
+            <div class="popup__form-area">
+               <input type="email" placeholder="Email *" required>
+            </div>
+         </div>
+         <div class="policy-agree">
+            <label>
+               <input type="checkbox" checked required>
+               <div class="policy-agree__box"></div>
+               <div class="policy-agree__text">Я даю согласие на обработку моих персональных данных
+                  в соответствии с <button type="button" class="open-popup" data-popup="policy-popup">Политикой
+                     конфиденциальности</button></div>
+            </label>
+         </div>
+         <button type="submit" class="popup__form-submit btn">Отправить</button>
+      </form>
       <div class="callback-popup__close popup__close">
          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
             viewBox="0 0 16 16">

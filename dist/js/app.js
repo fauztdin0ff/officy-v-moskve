@@ -1298,6 +1298,17 @@ ymaps.ready(function () {
    });
 });
 
+/*==========================================================================
+Calendar
+============================================================================*/
+const tomorrow = new Date();
+tomorrow.setDate(tomorrow.getDate() + 1);
+
+new AirDatepicker('.datepicker', {
+   minDate: tomorrow,
+   autoClose: true
+});
+
 })();
 
 /******/ })()
