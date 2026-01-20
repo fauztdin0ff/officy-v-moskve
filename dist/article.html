@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="format-detection" content="telephone=no">
+
+   <!-- Favicon -->
+   <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="img/fav/android-chrome-192x192.png">
+   <link rel="icon" type="image/png" sizes="512x512" href="img/fav/android-chrome-512x512.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+   <link rel="icon" type="image/x-icon" href="img/fav/favicon.ico">
+   <meta name="msapplication-TileColor" content="#ececf2">
+   <meta name="theme-color" content="#ececf2">
+
+   <!-- SEO -->
+   <link rel="canonical" href="https://example.com/">
+   <meta name="description"
+      content="Профессиональный риелтор по аренде офисов в Москве. Подбор помещений под ваш бюджет, организация просмотров, ведение переговоров и юридическое сопровождение. Бесплатная консультация.">
+   <meta name="keywords"
+      content="аренда офисов, аренда офиса Москва, офисы в аренду, риелтор Москва, коммерческая недвижимость Москва">
+   <meta name="robots" content="index, follow">
+
+   <!-- Open Graph (Facebook, мессенджеры) -->
+   <meta property="og:title" content="Аренда офисов в Москве — [Имя/Агентство]">
+   <meta property="og:description"
+      content="Профессиональный риелтор по аренде офисов в Москве: подбор, показы, переговоры и юридическое сопровождение.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="">
+   <meta property="og:site_name" content="[Имя/Агентство]">
+   <meta property="og:locale" content="ru_RU">
+   <meta property="og:image" content="img/fav/og-image.jpg">
+   <meta property="og:image:alt" content="Аренда офисов в Москве — [Имя/Агентство]">
+
+   <!-- Twitter Card -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Аренда офисов в Москве — [Имя/Агентство]">
+   <meta name="twitter:description"
+      content="Подбор офисов в аренду по Москве. Быстро, безопасно, с юридическим сопровождением.">
+   <meta name="twitter:image" content="img/fav/og-image.jpg">
+   <meta name="twitter:site" content="@your_twitter">
+
+   <!-- Styles -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.6.0/air-datepicker.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>[Имя/Агентство] | Главная</title>
+   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+</head>
+
+<body>
+   <div class="preloader">
+      <div class="preloader__block">
+         <div class="preloader__loader"></div>
+         <div class="preloader__image">
+            <div class="preloader__image-wrapper">
+               <img src="img/preloader.png" alt="">
+               <img src="img/preloader.png" alt="">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="wrapper">
+      <header class="header absolute">
+   <div class="header__body container">
+      <div class="header__logo">
+         <a href="index.html" aria-label="На главную">
+            <img src="img/logo.png" width="177" height="64" alt="logo">
+         </a>
+      </div>
+      <div class="header__menu menu">
+         <div class="menu__icon"><span></span></div>
+         <div class="menu__body">
+            <ul class="menu__list">
+               <li><a href="index.html" class="menu__link active">Главная</a></li>
+               <li class="menu__item menu__item--has-submenu">
+                  <span class="menu__link">Каталог объектов</span>
+                  <span class="submenu-arrow">
+                     <img src="img/icons/chevron-right.svg" width="14" height="14" alt="chevron-right">
+                  </span>
+                  <ul class="submenu">
+                     <li><a href="catalog.html" class="submenu__link">Бизнес центры класса "А"</a></li>
+                     <li><a href="catalog.html" class="submenu__link">Бизнес центры класса "B"</a></li>
+                     <li><a href="catalog.html" class="submenu__link">Бизнес центры класса "C"</a></li>
+                  </ul>
+               </li>
+               <li><a href="" class="menu__link">Спецпредложения</a></li>
+               <li><a href="" class="menu__link">Собственникам</a></li>
+               <li><a href="contacts.html" class="menu__link">Контакты</a></li>
+            </ul>
+            <div class="menu__contacts">
+               <a href="tel:+74951234567" class="menu__contact">
+                  <div class="menu__contact-icon">
+                     <svg>
+                        <use xlink:href="#icon-telephone"></use>
+                     </svg>
+                  </div>
+                  +7 495 123 45 67
+               </a>
+               <a href="mailto:example@company.com" class="menu__contact">
+                  <div class="menu__contact-icon">
+                     <svg>
+                        <use xlink:href="#icon-mail"></use>
+                     </svg>
+                  </div>
+                  example@company.com
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="header__more">
+         <div class="header__tel">
+            <a href="tel:+74951234567">+7 495 123 45 67</a>
+         </div>
+         <div class="header__buttons">
+            <div class="header__callback">
+               <button type="button" class="open-popup btn" data-popup="callback-popup">
+                  <img src="img/icons/telephone.svg" width="16" height="16" alt="tel icon">
+                  Заказать звонок
+               </button>
+            </div>
+            <div class="header__socials">
+               <a href="" class="header__social" aria-label="Перейти в whatsapp">
+                  <img src="img/icons/whatsapp.svg" width="20" height="20" alt="whatsapp icon">
+               </a>
+               <a href="" class="header__social" aria-label="Перейти в telegram">
+                  <img src="img/icons/telegram.svg" width="20" height="20" alt="telegram icon">
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+      <main>
+         <section class="art-article">
+            <div class="art-article__body container">
+               <div class="art-article__go-back">
+                  <a href="" class="border-gradient">
+                     <svg>
+                        <use xlink:href="#icon-arrow-left"></use>
+                     </svg>
+                     Назад к блогу
+                  </a>
+               </div>
+               <div class="art-article__banner border-gradient">
+                  <div class="art-article__banner-top">
+                     <div class="art-article__banner-date">26.03.2025</div>
+                     <div class="art-article__banner-tags">
+                        <div class="blog-tag">Artellect-Блог</div>
+                        <div class="blog-tag">Маркетинг</div>
+                     </div>
+                     <div class="art-article__banner-icon">
+                        <img src="img/icons/dots-triangle.svg" width="24" height="22" alt="icon">
+                     </div>
+                  </div>
+                  <div class="art-article__banner-main">
+                     <h1 class="art-article__banner-name rainbow-text">
+                        Антикризисные продажи: как развивать бизнес, когда другие тонут
+                     </h1>
+                     <div class="breadcrumbs">
+                        <span class="breadcrumbs__separator">//</span>
+                        <a href="" class="breadcrumbs__link">Главная</a>
+                        <span class="breadcrumbs__separator">/</span>
+                        <a href="" class="breadcrumbs__link">Блог</a>
+                        <span class="breadcrumbs__separator">/</span>
+                        <span class="breadcrumbs__current">Антикризисные продажи</span>
+                     </div>
+                  </div>
+                  <div class="art-article__banner-footer">
+                     <div class="art-blog__banner-details">
+                        <div class="art-blog__banner-detail">
+                           <div class="art-blog__banner-detail-icon">
+                              <svg>
+                                 <use xlink:href="#icon-clock"></use>
+                              </svg>
+                           </div>
+                           <div class="art-blog__banner-detail-text">15 мин<i>ут</i></div>
+                        </div>
+                        <div class="art-blog__banner-detail">
+                           <div class="art-blog__banner-detail-icon">
+                              <svg>
+                                 <use xlink:href="#icon-eye"></use>
+                              </svg>
+                           </div>
+                           <div class="art-blog__banner-detail-text">10<i> просмотров</i></div>
+                        </div>
+                     </div>
+                     <div class="art-article__banner-buttons">
+                        <a href="#new-comment" class="art-article__banner-comment">
+                           <svg>
+                              <use xlink:href="#icon-write"></use>
+                           </svg>
+                           <span>Оставить комментарий</span>
+                        </a>
+                        <div class="art-article__banner-share">
+                           <p>
+                              <svg>
+                                 <use xlink:href="#icon-share"></use>
+                              </svg>
+                              Поделиться в:
+                           </p>
+                           <a href="" target="_blank" class="art-article__banner-soc" aria-label="telegram">
+                              <img src="img/icons/telegram.svg" width="24" height="24" alt="telegram">
+                           </a>
+                           <a href="" target="_blank" class="art-article__banner-soc" aria-label="vk">
+                              <img src="img/icons/vk.svg" width="24" height="24" alt="vk">
+                           </a>
+                           <a href="" target="_blank" class="art-article__banner-soc" aria-label="whatsapp">
+                              <img src="img/icons/whatsapp.svg" width="24" height="24" alt="whatsapp">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="art-article__banner-image">
+                     <img src="img/blog/article-banner.png" width="1700" height="577" alt="image">
+                  </div>
+               </div>
+               <div class="art-article__content">
+                  <div class="art-article__main">
+                     <div class="art-article__nav border-gradient">
+                        <div class="art-article__nav-title">В статье рассказывается:</div>
+                        <ol>
+                           <li class="border-gradient"><a href="#">9 книг по маркетингу, которые должен прочитать каждый
+                                 маркетолог</a>
+                           </li>
+                           <li class="border-gradient"><a href="#">4 лучшие книги по маркетингу в социальных сетях</a>
+                           </li>
+                           <li class="border-gradient"><a href="#">Топ-5 книг по контент-маркетингу</a></li>
+                           <li class="border-gradient"><a href="#">7 книг по маркетингу и PR зарубежных авторов</a></li>
+                        </ol>
+                        <div class="art-article__download border-gradient">
+                           <div class="art-article__download-icon">
+                              <img src="img/icons/pdf.svg" width="48" height="48" alt="download icon">
+                           </div>
+                           <p>Чек-лист: Как за 30 минут найти в своём бизнесе минимум 1 000 000 ₽ дополнительной прибыли
+                              <a href="">Скачать бесплатно</a>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="art-article__text">
+                        <p>
+                           Антикризисные продажи не теряют своей актуальности: за одним экономическим кризисом следует
+                           другой,
+                           и протекают они на
+                           фоне эпидемий, войн и в условиях социальной напряженности. При таком раскладе собственникам
+                           бизнеса
+                           нужно задействовать
+                           все возможности, чтобы не просто пережить тяжелые времена, но и выйти из них с прибылью.
+                           Кому-то может показаться странным упоминание прибыли в кризис, но это не фантастика — сложные
+                           времена действительно
+                           могут помочь бизнесу расти и увеличивать продажи. Все дело в том, как реагировать на внешние
+                           факторы. Кто-то идет по
+                           очевидному пути, снижая цены и увольняя персонал, и в результате получает 0 в графе продаж и
+                           долги.
+                           Другие же
+                           предпринимают иные действия и выходят из кризиса успешными и стабильными. О том, какие это
+                           действия, мы поговорим в
+                           нашей статье.
+                        </p>
+                        <h2>Влияние кризиса на продажи</h2>
+                        <p>
+                           Наступление кризиса легко распознается по определенным признакам: неуклонном снижении
+                           прибыли,
+                           падении спроса на
+                           продукцию. Как только это происходит, владелец бизнеса сразу делает для себя соответствующий
+                           неутешительный вывод.
+                           Неясно пока, как долго захватившая мир пандемия коронавируса будет влиять на
+                           предпринимательство. Но совершенно точно
+                           можно сказать: последствия ощутят на себе абсолютно все сферы бизнеса.
+                           Тем не менее не стоит опускать руки. В нынешней ситуации есть множество работающих способов
+                           не
+                           только пережить этот
+                           непростой период, но даже извлечь выгоду для дальнейшего развития бизнеса.
+                        </p>
+                        <h3>Каковы же условные преимущества кризиса?</h3>
+                        <ul>
+                           <li>Рынок покидает большое количество представителей малого бизнеса и индивидуальных
+                              предпринимателей, которые исчерпали все
+                              свои ресурсы. Соответственно, конкурентов становится меньше</li>
+                           <li>С этим кризисом ваш бизнес проходит так называемую проверку на прочность. Вы узнаете свои
+                              слабые места, требующие
+                              корректировки и замены. Действительно работающие элементы бизнеса пройдут испытание и
+                              окрепнут.</li>
+                           <li>Самый подходящий момент придать своему делу импульс к развитию — это именно кризисное
+                              время.
+                              Используйте данный период
+                              для обновления, задания новых направлений своему бизнесу. Только дальновидные
+                              руководители,
+                              нацеленные на перспективу,
+                              сумеют продолжить работу в кризис. Этим они лишний раз докажут собственную
+                              состоятельность.
+                           </li>
+                           <li>Кризис вынуждает оставшихся на плаву предпринимателей увеличивать сбыт продукции,
+                              улучшать
+                              уровень обслуживания,
+                              расширять ассортимент. Конкуренты пытаются опередить друг друга, внедряя все новые
+                              маркетинговые стратегии и способы
+                              антикризисных продаж. Например, в условиях пандемии организуют онлайн-торговлю.</li>
+                        </ul>
+                        <h2>Блок с изображениями</h2>
+                        <p>Наступление кризиса легко распознается по определенным признакам: неуклонном снижении
+                           прибыли,
+                           падении спроса на
+                           продукцию. Как только это происходит, владелец бизнеса сразу делает для себя соответствующий
+                           неутешительный вывод.
+                           Неясно пока, как долго захватившая мир пандемия коронавируса будет влиять на
+                           предпринимательство. Но совершенно точно
+                           можно сказать: последствия ощутят на себе абсолютно все сферы бизнеса.
+                           Тем не менее не стоит опускать руки. В нынешней ситуации есть множество работающих способов
+                           не
+                           только пережить этот
+                           непростой период, но даже извлечь выгоду для дальнейшего развития бизнеса.</p>
+                        <img src="img/blog/image-3.png" width="1125" height="474" alt="image">
+                     </div>
+                     <div class="art-article__expert border-gradient">
+                        <div class="art-article__expert-title">Мнение эксперта</div>
+                        <div class="art-article__expert-name">Фамилия имя, должность, компания</div>
+                        <div class="art-article__expert-qoute">
+                           <div class="art-article__expert-photo">
+                              <img src="img/blog/author-2.png" width="240" height="240" alt="author">
+                           </div>
+                           <div class="art-article__expert-text">
+                              <p>
+                                 В условиях кризиса важно не просто сохранять бизнес, но и находить новые точки роста.
+                                 Гибкость, работа с текущими
+                                 клиентами и адаптация к изменяющимся условиям рынка — ключевые принципы успешных продаж
+                                 в
+                                 сложные времена.
+                                 Используйте стратегию ценовой адаптации, пересмотрите каналы сбыта и активно работайте
+                                 с
+                                 лояльностью клиентов. В кризис
+                                 выигрывают те, кто быстро реагирует и предлагает клиентам реальную ценность.
+                              </p>
+                              <p>
+                                 Следите за изменениями рынка и внедряйте эффективные методы продаж, чтобы не только
+                                 пережить кризис, но и укрепить свои
+                                 позиции.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="art-article__banner-share">
+                        <p>
+                           <svg>
+                              <use xlink:href="#icon-share"></use>
+                           </svg>
+                           Поделиться в:
+                        </p>
+                        <a href="" target="_blank" class="art-article__banner-soc" aria-label="telegram">
+                           <img src="img/icons/telegram.svg" width="24" height="24" alt="telegram">
+                        </a>
+                        <a href="" target="_blank" class="art-article__banner-soc" aria-label="vk">
+                           <img src="img/icons/vk.svg" width="24" height="24" alt="vk">
+                        </a>
+                        <a href="" target="_blank" class="art-article__banner-soc" aria-label="whatsapp">
+                           <img src="img/icons/whatsapp.svg" width="24" height="24" alt="whatsapp">
+                        </a>
+                     </div>
+                  </div>
+                  <aside class="art-article__aside">
+                     <div class="art-article__about border-gradient">
+                        <div class="art-article__aside-title">Статью подготовил</div>
+                        <div class="art-article__author">
+                           <div class="art-article__author-photo">
+                              <img src="img/blog/author-1.png" width="80" height="80" alt="photo">
+                           </div>
+                           <div class="art-article__author-info">
+                              <div class="art-article__author-name">Имя Фамилия</div>
+                              <div class="art-article__author-role">Должность</div>
+                           </div>
+                        </div>
+                        <div class="art-article__aside-title">Разделы блога</div>
+                        <ul class="art-article__chapters">
+                           <li>
+                              <span class="border-gradient">21</span>
+                              <span class="border-gradient">LSI и SEO Копирайтинг</span>
+                           </li>
+                           <li>
+                              <span class="border-gradient">209</span>
+                              <span class="border-gradient">PRO-копирайтинг</span>
+                           </li>
+                           <li>
+                              <span class="border-gradient">152</span>
+                              <span class="border-gradient">Бизнес и маркетинг</span>
+                           </li>
+                           <li>
+                              <span class="border-gradient">63</span>
+                              <span class="border-gradient">Заметки о профессии</span>
+                           </li>
+                           <li>
+                              <span class="border-gradient">21</span>
+                              <span class="border-gradient">LSI и SEO Копирайтинг</span>
+                           </li>
+                           <li>
+                              <span class="border-gradient">21</span>
+                              <span class="border-gradient">LSI и SEO Копирайтинг</span>
+                           </li>
+                           <li>
+                              <span class="border-gradient">21</span>
+                              <span class="border-gradient">LSI и SEO Копирайтинг</span>
+                           </li>
+                        </ul>
+                     </div>
+                  </aside>
+               </div>
+            </div>
+
+         </section>
+      </main>
+      <footer class="footer element-animation">
+   <div class="footer__body container">
+      <div class="footer__main">
+         <div class="footer__col">
+            <div class="footer__logo">
+               <img src="img/logo.png" width="177" height="64" alt="logo">
+            </div>
+            <div class="footer__subtitle">
+               С 2005 года помогаем компаниям находить удобные и современные офисы в Москве. Берём на себя весь процесс
+               аренды — от подбора до подписания договора.
+            </div>
+            <div class="footer__subscribe">
+               <div class="footer__subscribe-label">Подпишитесь на обновления</div>
+               <div class="footer__subscribe-form">
+                  <div class="footer__subscribe-area">
+                     <input type="email" placeholder="Введите ваш email">
+                     <button type="button" class="footer__subscribe-btn">Подписаться</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__col">
+            <div class="footer__col-label">Компания</div>
+            <ul>
+               <li><a href="index.html">Главная</a></li>
+               <li><a href="catalog.html">Каталог БЦ</a></li>
+               <li><a href="about.html">О нас</a></li>
+               <li><a href="index.html#reviews">Отзывы</a></li>
+            </ul>
+         </div>
+         <div class="footer__col">
+            <div class="footer__col-label">Ресурсы</div>
+            <ul>
+               <li><a href="contacts.html">Контакты</a></li>
+               <li><a href="owner.html">Для собственников</a></li>
+            </ul>
+         </div>
+         <div class="footer__col">
+            <div class="footer__col-label">Управление</div>
+            <ul>
+               <li><a href="index.html">Регистрация</a></li>
+               <li><a href="owner.html">Управление бронированием</a></li>
+               <li><a href="owner.html">Шофёрский сервис</a></li>
+               <li><a href="owner.html">Статус рейса</a></li>
+            </ul>
+         </div>
+         <div class="footer__col">
+            <div class="footer__col-label">Связаться с нами</div>
+            <ul>
+               <li><span>
+                     <img src="img/icons/location-bk.png" width="24" height="24" alt="geo icon">
+                     Москва, ул. Ленина, д. 10</span></li>
+               <li><a href="tel:+74951234567" class="telephone"><img src="img/icons/telephone.png" width="24"
+                        height="24" alt="telephone icon"> +7 495 123 45 67</a></li>
+               <li><a href="mailto:info@company.ru"><img src="img/icons/mail.png" width="24" height="24"
+                        alt="mail icon">
+                     info@company.ru</a></li>
+            </ul>
+            <div class="footer__socials">
+               <div class="footer__socials-label">Следите за нами!</div>
+               <div class="footer__soc-items">
+                  <a href="" class="footer__social" aria-label="Instagram">
+                     <img src="img/icons/instagram.png" width="24" height="24" alt="instagram logo">
+                  </a>
+                  <a href="" class="footer__social" aria-label="Facebook">
+                     <img src="img/icons/facebook.png" width="24" height="24" alt="facebook logo">
+                  </a>
+                  <a href="" class="footer__social" aria-label="LinkedIn">
+                     <img src="img/icons/linkedin.png" width="24" height="24" alt="linkedin logo">
+                  </a>
+                  <a href="" class="footer__social" aria-label="Twitter">
+                     <img src="img/icons/twitter.png" width="24" height="24" alt="twitter logo">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer__bottom">
+         <p>© CompanyName 2025</p>
+      </div>
+   </div>
+</footer>
+      <!--Попапы-->
+<div class="callback-popup popup" id="callback-popup">
+   <div class="callback-popup__body popup__body">
+      <div class="callback-popup__title popup__title">Заполните данные и мы <br> свяжемся с вами в ближайшее время</div>
+      <form class="callback-popup__form popup__form">
+         <div class="popup__form-area">
+            <input type="text" placeholder="Имя *" required>
+         </div>
+         <div class="popup__form-row">
+            <div class="popup__form-area">
+               <input type="text" class=" tel-mask" placeholder="Номер телефона *" required>
+            </div>
+            <div class="popup__form-area">
+               <input type="email" placeholder="Email *" required>
+            </div>
+         </div>
+         <div class="policy-agree">
+            <label>
+               <input type="checkbox" checked required>
+               <div class="policy-agree__box"></div>
+               <div class="policy-agree__text">Я даю согласие на обработку моих персональных данных
+                  в соответствии с <button type="button" class="open-popup" data-popup="policy-popup">Политикой
+                     конфиденциальности</button></div>
+            </label>
+         </div>
+         <button type="submit" class="popup__form-submit btn">Отправить</button>
+      </form>
+      <div class="callback-popup__close popup__close">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+            viewBox="0 0 16 16">
+            <path
+               d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+         </svg>
+      </div>
+   </div>
+</div>
+
+<div class="present-popup popup" id="present-popup">
+   <div class="present-popup__body popup__body">
+      <div class="present-popup__title popup__title">Заполните данные для получения презентации</div>
+      <form class="present-popup__form popup__form">
+         <div class="popup__form-area">
+            <input type="text" placeholder="Имя *" required>
+         </div>
+         <div class="popup__form-row">
+            <div class="popup__form-area">
+               <input type="text" placeholder="Название компании ">
+            </div>
+            <div class="popup__form-area">
+               <input type="email" placeholder="Email *" required>
+            </div>
+         </div>
+         <div class="policy-agree">
+            <label>
+               <input type="checkbox" checked required>
+               <div class="policy-agree__box"></div>
+               <div class="policy-agree__text">Я даю согласие на обработку моих персональных данных
+                  в соответствии с <button type="button" class="open-popup" data-popup="policy-popup">Политикой
+                     конфиденциальности</button></div>
+            </label>
+         </div>
+         <button type="submit" class="popup__form-submit btn">Получить презентацию</button>
+      </form>
+      <div class="callback-popup__close popup__close">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+            viewBox="0 0 16 16">
+            <path
+               d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+         </svg>
+      </div>
+   </div>
+</div>
+
+<div class="offices-popup popup" id="offices-popup">
+   <div class="offices-popup__body popup__body">
+      <div class="offices-popup__title popup__title">Доступные офисы</div>
+      <div class="offices-popup__content">
+         <div class="offices-popup__tabs">
+            <div class="offices-popup__tab active" data-offices="1">Аренда <span>(35)</span></div>
+            <div class="offices-popup__tab" data-offices="2">Продажа <span>(21)</span></div>
+         </div>
+         <div class="offices-popup__wrapper">
+            <div class="offices-popup__items active" data-offices="1">
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+            <div class="offices-popup__items" data-offices="2">
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="offices-popup__item">
+                  <div class="office-info__related-office">
+                     <div class="office-info__related-info">
+                        <div class="office-info__related-top">
+                           <div class="office-info__related-name">Офис 345 м² - 4 этаж</div>
+                           <div class="office-info__related-price">57 600 Р/м² в год</div>
+                           <div class="office-info__related-price">240 000 Р/в мес</div>
+                           <div class="office-info__related-button">
+                              <button type="button" class="btn open-popup" data-popup="callback-popup">Узнать
+                                 детали</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+            </div>
+
+            <div class="loading-icon"></div>
+         </div>
+      </div>
+      <div class="offices-popup__close popup__close">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+            viewBox="0 0 16 16">
+            <path
+               d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+         </svg>
+      </div>
+   </div>
+</div>
+
+<div class="policy-popup popup" id="policy-popup">
+   <div class="policy-popup__body popup__body">
+      <div class="policy-popup__title popup__title">Политика конфиденциальности</div>
+      <div class="policy-popup__text admin-text">
+         <p style="color: #ccc;">Дата последнего обновления: 23 декабря 2025 года</p>
+         <p>Мы заботимся о вашей конфиденциальности и стремимся защищать ваши персональные данные. Настоящая Политика
+            конфиденциальности объясняет, какие данные мы собираем, как мы их используем и какие права у вас есть в
+            отношении ваших
+            данных.</p>
+         <h3>1. Сбор информации</h3>
+         <p>Мы можем собирать следующие виды информации:</p>
+         <ul>
+            <li>Персональные данные, которые вы предоставляете сами (например, имя, адрес электронной почты, телефон,
+               информация о
+               заказах или регистрационные данные).</li>
+            <li>Техническая информация, автоматически собираемая при использовании сайта (например, IP-адрес, тип
+               браузера, операционная
+               система, данные о посещениях страниц, файлы cookie и аналогичные технологии).</li>
+         </ul>
+
+         <h3>Использование информации</h3>
+         <p>Собранная информация используется для:</p>
+         <ul>
+            <li>Обеспечения работы сайта и улучшения качества наших сервисов.</li>
+            <li>Связи с вами, включая ответы на запросы и предоставление информации о наших продуктах и услугах.</li>
+            <li>Проведения анализа и статистики для улучшения функциональности сайта.</li>
+            <li>Соблюдения юридических обязательств.</li>
+         </ul>
+
+         <h3>Раскрытие информации</h3>
+         <p>Мы не продаем и не передаем ваши персональные данные третьим лицам без вашего согласия, за исключением
+            случаев:</p>
+         <ul>
+            <li>Когда это необходимо для предоставления услуг (например, обработка платежей через сторонние сервисы).
+            </li>
+            <li>При соблюдении требований закона или запросов государственных органов.</li>
+            <li>Для защиты наших прав, собственности или безопасности.</li>
+         </ul>
+         <h3>Cookies и аналогичные технологии</h3>
+         <p>Наш сайт использует cookies и подобные технологии для:</p>
+         <ul>
+            <li>Улучшения работы сайта и персонализации контента.</li>
+            <li>Сбора аналитических данных о посещениях.
+               Вы можете управлять настройками cookies через ваш браузер.</li>
+         </ul>
+
+         <h3>Безопасность данных</h3>
+         <p>Мы предпринимаем разумные технические и организационные меры для защиты персональных данных от
+            несанкционированного
+            доступа, изменения, раскрытия или уничтожения.</p>
+
+         <h3>Хранение данных</h3>
+         <p>Персональные данные хранятся не дольше, чем это необходимо для целей, для которых они были собраны, если
+            иное не
+            предусмотрено законодательством.</p>
+
+         <h3>Права пользователей</h3>
+         <p>Вы имеете право:</p>
+         <ul>
+            <li>Получать информацию о ваших персональных данных, которые мы храним.</li>
+            <li>Запрашивать исправление, удаление или ограничение обработки ваших данных.</li>
+            <li>Отзывать согласие на обработку данных, если это предусмотрено законом.</li>
+            <li>Подавать жалобу в уполномоченный орган по защите данных.</li>
+         </ul>
+
+         <h3>Контактная информация</h3>
+         <p>Если у вас есть вопросы относительно этой Политики конфиденциальности или обработки ваших персональных
+            данных, вы можете
+            связаться с нами:</p>
+         <ul>
+            <li>Электронная почта: [ваш_email@example.com]</li>
+            <li>Телефон: [ваш_телефон]</li>
+         </ul>
+      </div>
+      <div class="callback-popup__close popup__close">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+            viewBox="0 0 16 16">
+            <path
+               d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+         </svg>
+      </div>
+   </div>
+</div>
+
+<div class="visit-popup popup" id="visit-popup">
+   <div class="callback-popup__body popup__body">
+      <div class="callback-popup__title popup__title">Назначить просмотр</div>
+      <form class="callback-popup__form popup__form">
+         <div class="popup__form-row">
+            <div class="popup__form-area">
+               <input type="text" placeholder="Имя *" required>
+            </div>
+            <div class="popup__form-area">
+               <input type="text" class="datepicker" required readonly placeholder="Выберите дату *">
+            </div>
+         </div>
+         <div class="popup__form-row">
+            <div class="popup__form-area">
+               <input type="text" class=" tel-mask" placeholder="Номер телефона *" required>
+            </div>
+            <div class="popup__form-area">
+               <input type="email" placeholder="Email *" required>
+            </div>
+         </div>
+         <div class="policy-agree">
+            <label>
+               <input type="checkbox" checked required>
+               <div class="policy-agree__box"></div>
+               <div class="policy-agree__text">Я даю согласие на обработку моих персональных данных
+                  в соответствии с <button type="button" class="open-popup" data-popup="policy-popup">Политикой
+                     конфиденциальности</button></div>
+            </label>
+         </div>
+         <button type="submit" class="popup__form-submit btn">Отправить</button>
+      </form>
+      <div class="callback-popup__close popup__close">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+            viewBox="0 0 16 16">
+            <path
+               d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+         </svg>
+      </div>
+   </div>
+</div>
+   </div>
+   <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+   style="display: none;"><svg fill="currentColor" class="bbi bbi-arrow-left" viewBox="0 0 16 16" id="icon-arrow-left"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+   </svg><svg fill="currentColor" class="abi abi-arrow-left-right" viewBox="0 0 16 16" id="icon-arrow-left-right"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5" />
+   </svg><svg fill="currentColor" class="cbi cbi-arrow-right" viewBox="0 0 16 16" id="icon-arrow-right"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+   </svg><svg fill="currentColor" class="dbi dbi-calendar2-week" viewBox="0 0 16 16" id="icon-calendar"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+      <path
+         d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+   </svg><svg fill="currentColor" class="ebi ebi-chevron-down" viewBox="0 0 16 16" id="icon-chevron-down"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+   </svg><svg fill="currentColor" class="fbi fbi-chevron-up" viewBox="0 0 16 16" id="icon-chevron-up"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+   </svg><svg fill="currentColor" class="gbi gbi-geo-alt" viewBox="0 0 16 16" id="icon-geo"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+   </svg><svg fill="currentColor" class="hbi hbi-list" viewBox="0 0 16 16" id="icon-list"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+   </svg><svg fill="currentColor" class="ibi ibi-envelope" viewBox="0 0 16 16" id="icon-mail"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+   </svg><svg fill="currentColor" class="jbi jbi-person" viewBox="0 0 16 16" id="icon-person"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+   </svg><svg fill="currentColor" class="kbi kbi-search" viewBox="0 0 16 16" id="icon-search"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+   </svg><svg fill="currentColor" class="lbi lbi-telephone" viewBox="0 0 16 16" id="icon-telephone"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+   </svg>
+</svg>
+   <button type="button" class="go-to-top">
+      <img src="img/icons/arrow-up-icon.svg" width="30" height="30" alt="arrow up">
+   </button>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>
