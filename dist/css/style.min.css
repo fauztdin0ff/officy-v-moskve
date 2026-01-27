@@ -9148,3 +9148,104 @@ Blog
     flex: 1 1 auto;
   }
 }
+
+/*==========================================================================
+Owner
+============================================================================*/
+.owner__body {
+  background: #f8f8ff;
+  padding: 24px;
+  max-width: 1400px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04), 6px 3px 14px 0px rgba(0, 0, 0, 0.04), 23px 12px 26px 0px rgba(0, 0, 0, 0.03), 53px 27px 35px 0px rgba(0, 0, 0, 0.02), 94px 48px 42px 0px rgba(0, 0, 0, 0.01);
+  border-radius: 20px;
+  margin-bottom: 80px;
+}
+.owner__body .achievement__body {
+  box-shadow: none;
+}
+.owner__body .achievement__text {
+  display: flex;
+  flex-direction: column;
+}
+.owner__body .achievement__cards {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+.owner__body .achievement__card {
+  margin-bottom: 0;
+  background: #fff;
+  box-shadow: none;
+}
+@media (width < 767px) {
+  .owner__body {
+    padding: 8px;
+    border-radius: 12px;
+  }
+  .owner__body .achievement__image img {
+    border-radius: 12px;
+  }
+}
+.owner__title {
+  margin-bottom: 24px;
+}
+.owner__form {
+  padding: clamp(32px, 3.333vw, 96px);
+}
+@media (width < 767px) {
+  .owner__form {
+    padding: 24px 16px;
+  }
+}
+.owner__form-row {
+  display: flex;
+  gap: 24px;
+}
+.owner__form-row:not(:last-child) {
+  margin-bottom: 24px;
+}
+@media (width < 767px) {
+  .owner__form-row {
+    flex-direction: column;
+  }
+}
+.owner__form-area {
+  flex: 1;
+}
+.owner__form-area input,
+.owner__form-area textarea {
+  width: 100%;
+  padding: 16px 16px;
+  border-radius: 5px;
+  background: rgba(77, 115, 252, 0.1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  color: #16191a;
+  border: 0;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.owner__form-area input:focus,
+.owner__form-area textarea:focus {
+  border-color: #4d73fc;
+}
+@media (hover: hover) {
+  .owner__form-area input:hover,
+  .owner__form-area textarea:hover {
+    border-color: #4d73fc;
+  }
+}
+@media (hover: hover) {
+  .owner__form-submit .btn:hover {
+    background: #fc9c4d;
+    color: #fff;
+  }
+}
+@media (width < 600px) {
+  .owner__form-submit .btn {
+    width: 100%;
+  }
+}
